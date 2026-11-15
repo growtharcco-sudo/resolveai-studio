@@ -1,6 +1,6 @@
 # ResolveAI studio
 
-This repo makes and posts one Reel a day (and one Instagram carousel on Saturdays) for ResolveAI (Instagram @resolveai.software, YouTube @resolveaisoftware).
+This repo makes and posts one Reel a day (plus an Instagram picture on Wednesdays and a carousel on Saturdays) for ResolveAI (Instagram @resolveai.software, YouTube @resolveaisoftware).
 For every run, follow `ROUTINE.md` step by step. Never post directly: queue it, and GitHub Actions posts at `post_at`.
 Hard rules:
 - Write a brief and build the spec with `pipeline/kit.py`. Never hand-write scene coordinates or edit specs by hand.

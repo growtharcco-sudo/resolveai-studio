@@ -1,4 +1,7 @@
-"""Instagram carousel maker (1080x1350 JPEG slides, the ResolveAI night look).
+"""Instagram carousel and single-image post maker. For a single picture add "type": "image" and give exactly 1 slide
+(a "cover" slide with a sourced fact, or a "point" slide with a real screen).
+
+Instagram carousel maker (1080x1350 JPEG slides, the ResolveAI night look).
 
 Usage:  python pipeline/carousel.py carousels/<id>.json          -> queue/<id>/slide1.jpg.. + post.json + sheet.png
 Brief:
@@ -50,7 +53,8 @@ def _frame(c, series, i, n):
     c.alpha_composite(fx.logo(56), (60, 56)); d.text((132, 66), "RESOLVEAI", font=f, fill=fx.WHITE)
     if series:
         sw = f.getlength(series); fx.rrect(d, [W - 60 - sw - 40, 58, W - 60, 110], 26, fill=fx.GOLD + (255,)); d.text((W - 60 - sw - 20, 64), series, font=f, fill=fx.INK)
-    pf = fx.font("bold", 30); t = f"{i} / {n}"; d.text((W - 60 - pf.getlength(t), H - 80), t, font=pf, fill=(200, 205, 220))
+    pf = fx.font("bold", 30)
+    if n > 1: t = f"{i} / {n}"; d.text((W - 60 - pf.getlength(t), H - 80), t, font=pf, fill=(200, 205, 220))
     if i < n: d.text((60, H - 80), "Swipe →", font=pf, fill=(200, 205, 220))
     else: d.text((60, H - 80), "resolveai.cc", font=pf, fill=fx.GOLD)
 
@@ -97,8 +101,11 @@ def wrap_lines(text, size):
 
 def check(b):
     P = []; n = len(b["slides"]); cap = b["post"]["instagram_caption"]
-    if not 3 <= n <= 10: P.append("3 to 10 slides")
-    if b["slides"][0]["kind"] != "cover" or b["slides"][-1]["kind"] != "cta": P.append("first slide cover, last slide cta")
+    if b.get("type") == "image":
+        if n != 1: P.append("an image post has exactly 1 slide")
+    else:
+        if not 3 <= n <= 10: P.append("3 to 10 slides")
+        if b["slides"][0]["kind"] != "cover" or b["slides"][-1]["kind"] != "cta": P.append("first slide cover, last slide cta")
     every = json.dumps(b, ensure_ascii=False)
     if "—" in every or "–" in every: P.append("no em or en dashes")
     if "small team" in every.lower(): P.append('banned phrase "small team"')
@@ -128,7 +135,8 @@ if __name__ == "__main__":
     sheet = Image.new("RGB", (270 * min(5, n), 338 * ((n + 4) // 5)), (0, 0, 0))
     for i, t in enumerate(th): sheet.paste(t, ((i % 5) * 270, (i // 5) * 338))
     sheet.save(os.path.join(out, "sheet.png"))
-    post = {"type": "carousel", "slot": "carousel", "post_at": b["post"]["post_at"], "images": names,
+    kind = "image" if b.get("type") == "image" else "carousel"
+    post = {"type": kind, "slot": kind, "post_at": b["post"]["post_at"], "images": names,
             "instagram_caption": b["post"]["instagram_caption"]}
     json.dump(post, open(os.path.join(out, "post.json"), "w"), indent=1, ensure_ascii=False)
     print("ready:", os.path.relpath(out, ROOT), f"({n} slides)")

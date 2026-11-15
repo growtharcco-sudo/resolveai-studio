@@ -82,6 +82,16 @@ def publish_reel(video_url, caption, cover_url=None, ai_label=True, token=None, 
     return {"ig_media_id": mid, "ig_permalink": link, "ig_upload": how}
 
 
+def publish_image(image_url, caption, token=None, user_id=None):
+    """Single-image feed post (public JPEG URL). Drawn by our own code, so no AI label."""
+    token = token or _env("IG_TOKEN"); user_id = user_id or _env("IG_USER_ID"); BASE = _base(token)
+    c = _check(requests.post(f"{BASE}/{user_id}/media", data={"image_url": image_url, "caption": caption, "access_token": token}, timeout=60))
+    wait_ready(BASE, c["id"], token, tries=20, wait=5)
+    mid = _check(requests.post(f"{BASE}/{user_id}/media_publish", data={"creation_id": c["id"], "access_token": token}, timeout=60))["id"]
+    link = _check(requests.get(f"{BASE}/{mid}", params={"fields": "permalink", "access_token": token}, timeout=30)).get("permalink")
+    return {"ig_media_id": mid, "ig_permalink": link, "ig_upload": "image"}
+
+
 def publish_carousel(image_urls, caption, token=None, user_id=None):
     """Feed carousel of 2..10 JPEG images (public URLs). Slides are drawn by our own code, so no AI label."""
     token = token or _env("IG_TOKEN"); user_id = user_id or _env("IG_USER_ID"); BASE = _base(token)

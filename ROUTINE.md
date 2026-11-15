@@ -8,11 +8,12 @@ Look: the illustrated night look (pipeline/fx.py), real product screens from `as
 Every Reel is a short brief built with the Reel kit (step 4). GitHub Actions posts every queued Reel at its
 `post_at`. You never post directly.
 
-One Reel a day and one Instagram carousel a week (IST):
+One Reel a day, plus an Instagram picture (Wednesday) and carousel (Saturday) each week (IST):
 | Slot | post_at | Length |
 |---|---|---|
 | `evening` | today 20:30 | 28 to 45 s |
 | `carousel` (Instagram only) | Saturday 11:00, made on Friday | 3 to 10 slides |
+| `image` (Instagram only) | Wednesday 11:00, made on Tuesday | 1 picture |
 
 ## 1. Pick the idea
 - Take the next open idea from `IDEAS.md`, or a better one. Check `posted/`, `queue/` and `IDEAS.md`: never repeat a
@@ -115,6 +116,7 @@ Send the video and cover with SendUserFile (status proactive) right after queuei
 
 ## A. Daily run (about 2:10 PM IST)
 Steps 1 to 7 for the `evening` Reel. Mark the idea `[used <id>]` in IDEAS.md.
+**On Tuesdays also make the weekly picture post** (section D) for Wednesday 11:00 IST.
 **On Fridays also make the weekly carousel** (section C) for Saturday 11:00 IST.
 
 ## C. Weekly Instagram carousel (Fridays, posts Saturday 11:00 IST)
@@ -134,3 +136,10 @@ Instagram only (no YouTube). Saves and shares matter most: a useful checklist or
 - "skip <id>" (or "skip"): create `queue/<id>/SKIP`, commit and push. Nothing gets posted.
 - A change: edit the brief, run kit.py, --sheet and the full render, re-run step 6 with the same id, push. Say what changed.
 - No reply: it posts at `post_at` on its own.
+
+## D. Weekly Instagram picture (Tuesdays, posts Wednesday 11:00 IST)
+One slide, Instagram only. Either one sourced fact as a big cover slide (kicker, 2 to 3 short lines, the number gold,
+`sub` = what it means), or one real demo screen as a point slide with a one-line tip. Brief as in section C with
+`"type": "image"` and exactly 1 slide, id `P<NNN>_<slug>`, `post_at` Wednesday 11:00 +05:30. Same caption rules.
+Run `python pipeline/carousel.py carousels/<id>.json`, check sheet.png, queue with `media_branch.py add-files <id> queue/<id>/slide1.jpg`,
+commit and push, send the owner the image: "<id>: picture post, Wednesday 11 AM. Reply skip <id>."

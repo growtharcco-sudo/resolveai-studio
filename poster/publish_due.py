@@ -78,14 +78,15 @@ def main():
             print(f"{vid}: not due until {when.isoformat()}"); continue
         rp = os.path.join(d, "result.json")
         res = json.load(open(rp)) if os.path.exists(rp) else {}
-        if post.get("type") == "carousel":                  # Instagram-only image carousel
-            print(f"{vid}: due, posting carousel")
+        if post.get("type") in ("carousel", "image"):      # Instagram-only feed posts
+            print(f"{vid}: due, posting {post['type']}")
             if DRY: continue
             try:
                 urls = [f"{PAGES}/{vid}/{n}" for n in post["images"]]
                 for u in urls: wait_public(u)
                 import instagram
-                res.update(instagram.publish_carousel(urls, post["instagram_caption"]))
+                res.update(instagram.publish_carousel(urls, post["instagram_caption"]) if post["type"] == "carousel"
+                           else instagram.publish_image(urls[0], post["instagram_caption"]))
                 res["posted_at"] = now.isoformat(); json.dump(res, open(rp, "w"), indent=1); print("  Instagram:", res.get("ig_permalink"))
                 shutil.move(d, os.path.join(ROOT, "posted", vid)); changed = True
             except Exception as e:
