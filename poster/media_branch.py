@@ -59,6 +59,19 @@ def add(vid, video, cover):
     raise SystemExit("could not add video to media branch")
 
 
+def add_files(vid, *files):
+    """Add any files (carousel slides) under <vid>/ and re-check they are there."""
+    import time
+    for attempt in range(4):
+        tmp = _checkout(); d = os.path.join(tmp, vid); os.makedirs(d, exist_ok=True)
+        for f in files: shutil.copy(f, os.path.join(d, os.path.basename(f)))
+        _publish(tmp); time.sleep(5)
+        chk = _checkout()
+        if all(os.path.exists(os.path.join(chk, vid, os.path.basename(f))) for f in files): print("media branch has", vid); return
+        print("files were overwritten by a parallel run, retrying"); time.sleep(10)
+    raise SystemExit("could not add files to media branch")
+
+
 def prune():
     tmp = _checkout()
     queued = set(os.listdir(os.path.join(ROOT, "queue"))) if os.path.isdir(os.path.join(ROOT, "queue")) else set()
@@ -70,5 +83,8 @@ def prune():
 
 if __name__ == "__main__":
     if sys.argv[1] == "add": add(*sys.argv[2:5])
-    elif sys.argv[1] == "check": print("on media branch" if os.path.exists(os.path.join(_checkout(), sys.argv[2], "video.mp4")) else "MISSING")
+    elif sys.argv[1] == "add-files": add_files(sys.argv[2], *sys.argv[3:])
+    elif sys.argv[1] == "check":
+        c = os.path.join(_checkout(), sys.argv[2])
+        print("on media branch" if os.path.exists(os.path.join(c, "video.mp4")) or os.path.exists(os.path.join(c, "slide1.jpg")) else "MISSING")
     elif sys.argv[1] == "prune": prune()

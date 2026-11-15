@@ -82,6 +82,24 @@ def publish_reel(video_url, caption, cover_url=None, ai_label=True, token=None, 
     return {"ig_media_id": mid, "ig_permalink": link, "ig_upload": how}
 
 
+def publish_carousel(image_urls, caption, token=None, user_id=None):
+    """Feed carousel of 2..10 JPEG images (public URLs). Slides are drawn by our own code, so no AI label."""
+    token = token or _env("IG_TOKEN"); user_id = user_id or _env("IG_USER_ID"); BASE = _base(token)
+    if not 2 <= len(image_urls) <= 10: raise RuntimeError("a carousel needs 2 to 10 images")
+    kids = []
+    for u in image_urls:
+        c = _check(requests.post(f"{BASE}/{user_id}/media", data={"image_url": u, "is_carousel_item": "true", "access_token": token}, timeout=60))
+        kids.append(c["id"])
+    for k in kids: wait_ready(BASE, k, token, tries=20, wait=5)
+    c = _check(requests.post(f"{BASE}/{user_id}/media", data={"media_type": "CAROUSEL", "children": ",".join(kids),
+                                                               "caption": caption, "access_token": token}, timeout=60))
+    st = wait_ready(BASE, c["id"], token, tries=20, wait=5)
+    if st.get("status_code") not in ("FINISHED", None): raise RuntimeError(f"Instagram could not process the carousel: {st}")
+    mid = _check(requests.post(f"{BASE}/{user_id}/media_publish", data={"creation_id": c["id"], "access_token": token}, timeout=60))["id"]
+    link = _check(requests.get(f"{BASE}/{mid}", params={"fields": "permalink", "access_token": token}, timeout=30)).get("permalink")
+    return {"ig_media_id": mid, "ig_permalink": link, "ig_upload": "carousel"}
+
+
 def refresh_token(token):
     """Instagram-login tokens last 60 days; refreshing returns a fresh 60-day token.
     Facebook/system-user tokens (EAA...) are refreshed differently or never expire, so they are returned unchanged."""

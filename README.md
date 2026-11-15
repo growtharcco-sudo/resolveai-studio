@@ -19,3 +19,4 @@ briefs/<id>.json  --pipeline/kit.py-->  specs/<id>.json  --pipeline/make_reel.py
 - `pages/`: the public site (home, privacy, terms) shown on GitHub Pages
 
 How to make a Reel: `ROUTINE.md`. One-time setup: `SETUP.md`.
+- `pipeline/carousel.py`: weekly Instagram carousel (1080x1350 slides) from a brief in `carousels/`

@@ -8,10 +8,11 @@ Look: the illustrated night look (pipeline/fx.py), real product screens from `as
 Every Reel is a short brief built with the Reel kit (step 4). GitHub Actions posts every queued Reel at its
 `post_at`. You never post directly.
 
-One Reel a day (IST):
+One Reel a day and one Instagram carousel a week (IST):
 | Slot | post_at | Length |
 |---|---|---|
 | `evening` | today 20:30 | 28 to 45 s |
+| `carousel` (Instagram only) | Saturday 11:00, made on Friday | 3 to 10 slides |
 
 ## 1. Pick the idea
 - Take the next open idea from `IDEAS.md`, or a better one. Check `posted/`, `queue/` and `IDEAS.md`: never repeat a
@@ -112,8 +113,22 @@ Send the video and cover with SendUserFile (status proactive) right after queuei
 
 ---
 
-## A. Daily run (about 2:30 PM IST)
+## A. Daily run (about 2:10 PM IST)
 Steps 1 to 7 for the `evening` Reel. Mark the idea `[used <id>]` in IDEAS.md.
+**On Fridays also make the weekly carousel** (section C) for Saturday 11:00 IST.
+
+## C. Weekly Instagram carousel (Fridays, posts Saturday 11:00 IST)
+Instagram only (no YouTube). Saves and shares matter most: a useful checklist or a "how to" for owners.
+1. Pick a topic not used in the last 30 days (`posted/`, IDEAS.md). Good shapes: "5 signs ...", "4 steps to ...",
+   "what to check every week in ...", or a guided tour of one demo screen. Same truth and fact rules as step 3.
+2. Write `carousels/C<NNN>_<slug>.json` (template and fields at the top of `pipeline/carousel.py`): a cover slide,
+   3 to 8 point slides (title max about 3 lines, body max 160 characters, an icon or a real screen `shot`), a cta slide.
+   `post.post_at` = Saturday 11:00 +05:30. Caption: same shape as the Reel caption, saying "Save this" near the top,
+   a real question, then exactly 5 hashtags including #resolveai.
+3. `python pipeline/carousel.py carousels/<id>.json` (exits on PROBLEMS: fix the brief), read `queue/<id>/sheet.png` once.
+4. Queue: `python poster/media_branch.py add-files <id> queue/<id>/slide*.jpg`, then `check <id>` must say
+   "on media branch", then `git add carousels queue && git commit -m "queue <id>" && git pull --rebase && git push`.
+5. Send the owner `sheet.png` with SendUserFile and one line: "<id>: carousel, posts Saturday 11 AM. Reply skip <id>."
 
 ## B. Replies from the owner
 - "skip <id>" (or "skip"): create `queue/<id>/SKIP`, commit and push. Nothing gets posted.
