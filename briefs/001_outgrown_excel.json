@@ -1,0 +1,46 @@
+{
+ "id": "001_outgrown_excel",
+ "series": "4 SIGNS",
+ "speed": 1.15,
+ "beats": [
+  {"say": "Four signs your business has outgrown Excel.",
+   "show": {"kind": "hook", "place": "factory", "kicker": "4 SIGNS", "lines": ["Outgrown", "Excel?"], "hl": ["Excel?"],
+            "person": ["owner", "stress", 1], "badge": "#4 COSTS THE MOST"}},
+  {"say": "And number four costs the most.", "cap": "And #4 costs the most."},
+  {"say": "First, a fact. Audits of real business spreadsheets found mistakes in forty nine out of fifty four.",
+   "cap": "First, a fact. Audits of real business spreadsheets found mistakes in 49 out of 54.",
+   "show": {"kind": "number", "to": 91, "suffix": "%", "label": "of audited spreadsheets", "sub": "had mistakes", "color": "red"}},
+  {"say": "That's about nine in ten."},
+  {"say": "Sign one. Three people keep three versions of the same sheet.",
+   "show": {"kind": "steps", "title": "4 SIGNS", "hl": 3, "steps": [["excel", "3 versions of one sheet"], ["whatsapp", "Orders live in WhatsApp"], ["clock", "Month end takes days"], ["rupee", "Who owes you? No idea"]]}},
+  {"say": "Sign two. Orders live in WhatsApp chats."},
+  {"say": "Sign three. Closing the month takes days, not minutes."},
+  {"say": "And sign four. Nobody can tell you, right now, who owes you money.", "pause": 0.5},
+  {"say": "One system fixes all four.",
+   "show": {"kind": "screen", "shot": "trading-home", "device": "phone", "title": ["One screen.", "Every number."], "hl": ["Every", "number."], "callout": "Stock, orders and dues, live"}},
+  {"say": "Stock, orders and money owed, live on your phone."},
+  {"say": "Try a live demo at resolve A I dot C C.", "cap": "Try a live demo at resolveai.cc",
+   "show": {"kind": "ending", "lines": ["Run your business", "from one screen."], "hl": ["one", "screen."]}},
+  {"say": "Follow for more."}
+ ],
+ "cover": {"kicker": "4 SIGNS", "big": ["OUTGROWN", "EXCEL?"], "sub": "#4 costs the most", "place": "factory", "person": ["owner", "stress", 1]},
+ "sources": [
+  {"fact": "Audits of 54 spreadsheets found errors in 49 (91%), research by Raymond R. Panko, University of Hawaii",
+   "url": "https://www.computerworld.com/article/1704893/sidebar-oops.html", "fetched": "2026-11-15"}
+ ],
+ "math": [
+  {"expr": "49", "expect": "49", "note": "spreadsheets with errors (Computerworld, Panko)"},
+  {"expr": "54", "expect": "54", "note": "spreadsheets audited (Computerworld, Panko)"},
+  {"expr": "round(49/54*100)", "expect": "91", "note": "share with errors, shown as 91%"},
+  {"expr": "round(49/54*10)", "expect": "9", "note": "'about nine in ten'"},
+  {"expr": "4", "expect": "4", "note": "four signs listed in the script"},
+  {"expr": "3", "expect": "3", "note": "example: three people, three versions"}
+ ],
+ "post": {
+  "slot": "test",
+  "post_at": "2026-11-15T20:30:00+05:30",
+  "instagram_caption": "Four signs your business has outgrown Excel. Number four costs the most.\n\nAudits of real business spreadsheets found mistakes in 49 out of 54. When three people keep three versions of the same sheet, orders sit in WhatsApp chats and month end takes days, the numbers stop being trustworthy.\n\nSign four: nobody can tell you, right now, who owes you money. That is cash sitting with your customers.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: Computerworld on Raymond Panko's spreadsheet audits.\n\nWhich of the four signs do you see in your business?\n\n#resolveai #erp #smallbusiness #excel #businessautomation",
+  "youtube_title": "4 Signs Your Business Has Outgrown Excel",
+  "youtube_description": "Four signs a business has outgrown spreadsheets, and why the fourth one costs the most. Audits of real business spreadsheets found mistakes in 49 out of 54.\n\nTry a live demo with sample data at https://www.resolveai.cc (no sign-up).\n\nSources:\n• Computerworld, \"Sidebar: Oops!\" on Raymond Panko's spreadsheet audits (fetched Nov 15, 2026)\n\nResolveAI: ERP software and AI automation for established businesses. Instagram: @resolveai.software\n\n#Shorts #ResolveAI #Excel"
+ }
+}
