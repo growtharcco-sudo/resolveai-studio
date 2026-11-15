@@ -5,6 +5,13 @@ import requests
 ok = True
 from instagram import _env
 tok, uid = _env("IG_TOKEN"), _env("IG_USER_ID")
+if tok:
+    # diagnostics (names and permission names only, never the key)
+    for path, fields in (("me", "id,name"), ("me/permissions", None)):
+        rr = requests.get(f"https://graph.facebook.com/v26.0/{path}", params={k: v for k, v in (("fields", fields), ("access_token", tok)) if v}, timeout=30)
+        if rr.ok and path == "me": print("Token belongs to:", rr.json().get("name"), rr.json().get("id"))
+        elif rr.ok: print("Granted permissions:", ", ".join(p["permission"] for p in rr.json().get("data", []) if p.get("status") == "granted"))
+        else: print(f"Diagnostic {path}: {rr.status_code} {rr.text[:200]}")
 if tok.startswith("EAA") and not uid:
     # system-user token is set but the account ID isn't yet: list the Instagram accounts it can reach
     r = requests.get("https://graph.facebook.com/v26.0/me/accounts",
