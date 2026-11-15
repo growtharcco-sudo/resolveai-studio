@@ -143,3 +143,20 @@ One slide, Instagram only. Either one sourced fact as a big cover slide (kicker,
 `"type": "image"` and exactly 1 slide, id `P<NNN>_<slug>`, `post_at` Wednesday 11:00 +05:30. Same caption rules.
 Run `python pipeline/carousel.py carousels/<id>.json`, check sheet.png, queue with `media_branch.py add-files <id> queue/<id>/slide1.jpg`,
 commit and push, send the owner the image: "<id>: picture post, Wednesday 11 AM. Reply skip <id>."
+
+## E. LinkedIn company page (via Zapier, fully automatic, 3 posts a week, 09:30 IST Tue / Wed / Thu)
+The daily run on **Monday, Tuesday and Wednesday** also writes the NEXT morning's LinkedIn post. No owner check needed
+(the owner asked for LinkedIn to run on its own), but every rule above still applies: sourced facts, examples labelled
+as examples, no invented clients or results, no dashes, no "small team", no personal names.
+- Files: `linkedin/L<NNN>_<slug>.json` = `{"post_at": "<next day>T09:30:00+05:30", "text": "...", "link": "https://...",
+  "image": "linkedin/L<NNN>_<slug>.jpg"}` plus the 1080x1350 JPEG. `poster/linkedin_feed.py` (GitHub Actions, every
+  30 minutes) puts due posts into the feed and Zapier posts them. Never edit or delete a post that is already due.
+- Tuesday: the best Reel of the last 7 days. Image = its cover (crop/pad to 1080x1350), text = the story in 5 to 8 short
+  lines for business owners, link = its YouTube Shorts URL from `posted/<id>/result.json`.
+- Wednesday: one insight post. Image = the Wednesday picture (section D) if ready, else a fact card made with
+  `pipeline/carousel.py` (`"type": "image"`). Text = the fact, why it matters, what to do, with the source named.
+- Thursday: a practical checklist or "how to" (5 bullets) from the week's carousel topic or a demo screen.
+  Image = the carousel cover or a demo screen slide. Link = the matching resolveai.cc page or free calculator.
+- Text: 600 to 1,300 characters, first line is the hook, short lines, one real question near the end, 3 hashtags at the
+  end (#ERP plus two topic tags). Write as ResolveAI ("we"). Link written out in the text as well.
+- Commit `linkedin/` with the day's other files and push. Mention it in the day's message in one line.
