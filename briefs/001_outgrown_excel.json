@@ -26,7 +26,7 @@
  "cover": {"kicker": "4 SIGNS", "big": ["OUTGROWN", "EXCEL?"], "sub": "#4 costs the most", "place": "factory", "person": ["owner", "stress", 1]},
  "sources": [
   {"fact": "Audits of 54 spreadsheets found errors in 49 (91%), research by Raymond R. Panko, University of Hawaii",
-   "url": "https://www.computerworld.com/article/1704893/sidebar-oops.html", "fetched": "2026-11-15"}
+   "url": "https://www.computerworld.com/article/1704893/sidebar-oops.html", "fetched": "2026-11-16"}
  ],
  "math": [
   {"expr": "49", "expect": "49", "note": "spreadsheets with errors (Computerworld, Panko)"},
@@ -38,9 +38,9 @@
  ],
  "post": {
   "slot": "test",
-  "post_at": "2026-11-15T20:30:00+05:30",
+  "post_at": "2026-11-16T20:30:00+05:30",
   "instagram_caption": "Four signs your business has outgrown Excel. Number four costs the most.\n\nAudits of real business spreadsheets found mistakes in 49 out of 54. When three people keep three versions of the same sheet, orders sit in WhatsApp chats and month end takes days, the numbers stop being trustworthy.\n\nSign four: nobody can tell you, right now, who owes you money. That is cash sitting with your customers.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: Computerworld on Raymond Panko's spreadsheet audits.\n\nWhich of the four signs do you see in your business?\n\n#resolveai #erp #smallbusiness #excel #businessautomation",
   "youtube_title": "4 Signs Your Business Has Outgrown Excel",
-  "youtube_description": "Four signs a business has outgrown spreadsheets, and why the fourth one costs the most. Audits of real business spreadsheets found mistakes in 49 out of 54.\n\nTry a live demo with sample data at https://www.resolveai.cc (no sign-up).\n\nSources:\n• Computerworld, \"Sidebar: Oops!\" on Raymond Panko's spreadsheet audits (fetched Nov 15, 2026)\n\nResolveAI: ERP software and AI automation for established businesses. Instagram: @resolveai.software\n\n#Shorts #ResolveAI #Excel"
+  "youtube_description": "Four signs a business has outgrown spreadsheets, and why the fourth one costs the most. Audits of real business spreadsheets found mistakes in 49 out of 54.\n\nTry a live demo with sample data at https://www.resolveai.cc (no sign-up).\n\nSources:\n• Computerworld, \"Sidebar: Oops!\" on Raymond Panko's spreadsheet audits (fetched Nov 16, 2026)\n\nResolveAI: ERP software and AI automation for established businesses. Instagram: @resolveai.software\n\n#Shorts #ResolveAI #Excel"
  }
 }
