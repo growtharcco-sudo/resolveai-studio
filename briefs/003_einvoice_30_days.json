@@ -1,0 +1,46 @@
+{
+ "id": "003_einvoice_30_days",
+ "series": "QUICK FACT",
+ "speed": 1.15,
+ "beats": [
+  {"say": "Late e-invoice? The invoice portal will reject it.",
+   "show": {"kind": "hook", "place": "warehouse", "kicker": "QUICK FACT", "lines": ["Late", "e-invoice?"], "hl": ["e-invoice?"],
+            "person": ["owner", "stress", 1], "badge": "TURNOVER ₹10 CR+"}},
+  {"say": "If your turnover is ten crore rupees or more, this is for you.", "cap": "If your turnover is ₹10 crore or more, this is for you."},
+  {"say": "Since April twenty twenty five, you get thirty days.", "cap": "Since April 2025, you get 30 days.",
+   "show": {"kind": "number", "to": 30, "suffix": " days", "label": "to report an e-invoice", "sub": "then the portal says no", "color": "red", "place": "warehouse"}},
+  {"say": "Thirty days from the invoice date, to report it on the I R P.", "cap": "30 days from the invoice date, to report it on the IRP."},
+  {"say": "After that, the portal will not accept it.", "pause": 0.5},
+  {"say": "It covers invoices.",
+   "show": {"kind": "steps", "title": "WHAT IT HITS", "hl": 3, "steps": [["paper", "Invoices"], ["paper", "Credit notes"], ["paper", "Debit notes"], ["rupee", "Your buyer's tax credit"]]}},
+  {"say": "Credit notes."},
+  {"say": "Debit notes."},
+  {"say": "And your buyer may struggle to claim input tax credit.", "pause": 0.5},
+  {"say": "So check pending invoices every week, not at month end.",
+   "show": {"kind": "screen", "shot": "trading-home", "device": "phone", "title": ["Check weekly,", "not monthly."], "hl": ["weekly,"], "callout": "Sales, stock and dues, live"}},
+  {"say": "One screen shows sales, stock and dues, live."},
+  {"say": "Try a live demo at resolve A I dot C C.", "cap": "Try a live demo at resolveai.cc",
+   "show": {"kind": "ending", "lines": ["Never miss", "the 30 days."], "hl": ["30", "days."]}},
+  {"say": "Follow for more."}
+ ],
+ "cover": {"kicker": "QUICK FACT", "big": ["30 DAYS.", "THEN REJECTED."], "sub": "GST e-invoices, turnover ₹10 crore+", "place": "warehouse", "person": ["owner", "stress", 1]},
+ "sources": [
+  {"fact": "From April 1, 2025, taxpayers with AATO of Rs 10 crore and above must report e-invoices on the IRP within 30 days of the invoice date; IRP validation disallows later reporting; applies to invoices, credit notes and debit notes; buyers may struggle to claim input tax credit (GSTN advisory dated Nov 5, 2024)",
+   "url": "https://www.businesstoday.in/personal-finance/tax/story/gst-rule-change-from-april-2025-taxpayers-need-to-upload-e-invoices-within-30-days-of-issuance-453138-2024-11-09", "fetched": "2026-11-17"},
+  {"fact": "The 30 day IRP reporting limit for turnover of Rs 10 crore and above, effective 1 April 2025, is still in force in 2026",
+   "url": "https://tallysolutions.com/business-guides/what-changed-in-e-invoicing-compliance-in-2026/", "fetched": "2026-11-17"}
+ ],
+ "math": [
+  {"expr": "10", "expect": "10", "note": "turnover threshold ₹10 crore (Business Today, GSTN advisory)"},
+  {"expr": "30", "expect": "30", "note": "days to report on the IRP (Business Today, GSTN advisory)"},
+  {"expr": "2025", "expect": "2025", "note": "effective April 1, 2025 (Business Today)"},
+  {"expr": "3", "expect": "3", "note": "document types: invoices, credit notes, debit notes (GSTN quoted by Business Today)"}
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-17T20:30:00+05:30",
+  "instagram_caption": "Late e-invoice? The invoice portal will reject it.\n\nSince April 1, 2025, GST taxpayers with annual aggregate turnover of ₹10 crore or more get 30 days from the invoice date to report an e-invoice on the IRP. After that, the portal does not accept it. This covers invoices, credit notes and debit notes, and your buyer may struggle to claim input tax credit.\n\nCheck pending invoices every week, not at month end, and talk to your CA about your process.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: GSTN advisory as reported by Business Today; TallyPrime 2026 e-invoicing guide.\n\nHow often does your team check for invoices not yet reported?\n\n#resolveai #gst #einvoice #distributor #msme",
+  "youtube_title": "GST E-Invoice: Report Within 30 Days or It Gets Rejected",
+  "youtube_description": "If your turnover is ₹10 crore or more, you get 30 days from the invoice date to report a GST e-invoice on the IRP. After that, the portal does not accept it, and that covers credit notes and debit notes too.\n\nTry a live demo with sample data at https://www.resolveai.cc (no sign-up).\n\nSources:\n• Business Today, \"GST rule change: From April 2025, taxpayers need to upload e-invoices within 30 days of issuance\" (fetched Nov 17, 2026)\n• TallyPrime, \"What Changed In E-Invoicing Compliance In 2026?\" (fetched Nov 17, 2026)\n\nResolveAI: ERP software and AI automation for established businesses. Instagram: @resolveai.software\n\n#Shorts #ResolveAI #GST"
+ }
+}

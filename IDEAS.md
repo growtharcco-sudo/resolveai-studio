@@ -7,11 +7,11 @@ Rotate industries and series. Examples are typical examples, never real clients.
 - MONEY LEAK: dead stock. Items sitting unsold for months and what they cost (find a sourced inventory carrying cost range). Distributor.
 - ONE SCREEN: the reorder alert. "Items below reorder level" on the factory demo dashboard. Factory.
 - BEFORE / AFTER: a school office on fee day, paper receipts vs the fees screen. School.
-- QUICK FACT: India's MSME count and their share of exports (msme.gov.in / PIB). What it means for owners.
+- [used P003] QUICK FACT: India's MSME count and their share of exports (msme.gov.in / PIB). What it means for owners.
 - N STEPS: 3 steps to collect dues faster (reminders, ageing list, one view of who owes what). Distributor.
 - MONEY LEAK: missed follow-ups. Enquiries answered late on WhatsApp. Agency.
 - ONE SCREEN: OPD queue and bed status on the hospital demo. Hospital.
-- QUICK FACT: GST e-invoicing threshold for businesses (cbic.gov.in / gst.gov.in, check the current limit). Distributor.
+- [used 003] QUICK FACT: GST e-invoicing threshold for businesses (cbic.gov.in / gst.gov.in, check the current limit). Distributor.
 - BEFORE / AFTER: month end closing, 3 days of spreadsheets vs a live dashboard. Factory.
 - N SIGNS: your agency needs a project tracker (deadlines in heads, clients chasing updates). Agency.
 - ONE SCREEN: attendance in one tap on the school demo. School.
