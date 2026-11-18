@@ -1,0 +1,466 @@
+{
+ "id": "004_fee_day",
+ "series": "BEFORE / AFTER",
+ "voice": "am_liam",
+ "speed": 1.15,
+ "header": "BEFORE / AFTER",
+ "phrases": [
+  {
+   "say": "Fee day at a typical school office. Sound familiar?",
+   "cap": "Fee day at a typical school office. Sound familiar?",
+   "pause": 0.18
+  },
+  {
+   "say": "A queue of parents, a receipt book, and one tired clerk.",
+   "cap": "A queue of parents, a receipt book, and one tired clerk.",
+   "pause": 0.35
+  },
+  {
+   "say": "Private unaided schools in India now teach nine point eight nine crore students.",
+   "cap": "Private unaided schools in India now teach 9.89 crore students.",
+   "pause": 0.18
+  },
+  {
+   "say": "Up from nine crore, two years earlier, says the Ministry of Education.",
+   "cap": "Up from 9 crore two years earlier, says the Ministry of Education.",
+   "pause": 0.18
+  },
+  {
+   "say": "More students means more fees to track.",
+   "cap": "More students means more fees to track.",
+   "pause": 0.5
+  },
+  {
+   "say": "Before: receipt books, a dues register, and calls to every parent.",
+   "cap": "Before: receipt books, a dues register, and calls to every parent.",
+   "pause": 0.18
+  },
+  {
+   "say": "After: raise the month's fees for every class in one click.",
+   "cap": "After: raise the month's fees for every class in one click.",
+   "pause": 0.18
+  },
+  {
+   "say": "Collect by U P I, cash, cheque or bank, with a numbered receipt.",
+   "cap": "Collect by UPI, cash, cheque or bank, with a numbered receipt.",
+   "pause": 0.35
+  },
+  {
+   "say": "Then one list shows who still owes fees.",
+   "cap": "Then one list shows who still owes fees.",
+   "pause": 0.18
+  },
+  {
+   "say": "With a ready WhatsApp reminder for each parent.",
+   "cap": "With a ready WhatsApp reminder for each parent.",
+   "pause": 0.5
+  },
+  {
+   "say": "Try a live demo at resolve A I dot C C.",
+   "cap": "Try a live demo at resolveai.cc",
+   "pause": 0.18
+  },
+  {
+   "say": "Follow for more.",
+   "cap": "Follow for more.",
+   "pause": 0.35
+  }
+ ],
+ "scenes": [
+  {
+   "place": "school",
+   "dim": 0.15,
+   "els": [
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "BEFORE / AFTER"
+      ],
+      "kw": {
+       "size": 42
+      }
+     },
+     "x": 540.0,
+     "y": 300,
+     "at": -1,
+     "anim": "pop",
+     "delay": 0
+    },
+    {
+     "type": "head",
+     "lines": [
+      "Fee day.",
+      "Sound familiar?"
+     ],
+     "hl": [
+      "familiar?"
+     ],
+     "size": 104,
+     "x": 540.0,
+     "y": 370,
+     "at": -1,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "person",
+      "args": [
+       "clerk",
+       "stress",
+       2
+      ],
+      "kw": {
+       "scale": 1.3
+      }
+     },
+     "x": 760,
+     "y": 981.0,
+     "at": -1,
+     "anim": "rise",
+     "delay": 0,
+     "float": 0
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "PAPER RECEIPTS"
+      ],
+      "kw": {
+       "size": 50,
+       "bg": [
+        228,
+        87,
+        46
+       ],
+       "fg": [
+        255,
+        255,
+        255
+       ]
+      }
+     },
+     "x": 330,
+     "y": 1180,
+     "at": 1,
+     "anim": "pop",
+     "delay": 0.3
+    }
+   ],
+   "until": 2,
+   "kind": "hook",
+   "seed": 3
+  },
+  {
+   "place": "school",
+   "dim": 0.62,
+   "els": [
+    {
+     "type": "head",
+     "lines": [
+      "Private school students"
+     ],
+     "hl": [],
+     "size": 76,
+     "x": 540.0,
+     "y": 470,
+     "at": 2,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "count",
+     "to": 9.89,
+     "prefix": "",
+     "suffix": "",
+     "dec": 2,
+     "indian": false,
+     "size": 210,
+     "x": 540.0,
+     "y": 700,
+     "color": "gold",
+     "at": 2,
+     "delay": 0.15,
+     "dur": 1.1
+    },
+    {
+     "type": "head",
+     "lines": [
+      "crore, up from 9 crore"
+     ],
+     "hl": [],
+     "size": 60,
+     "x": 540.0,
+     "y": 1040,
+     "at": 3,
+     "delay": 0.1,
+     "align": "center",
+     "color": "white"
+    }
+   ],
+   "until": 5,
+   "kind": "number",
+   "seed": 4
+  },
+  {
+   "place": "school",
+   "dim": 0.55,
+   "els": [
+    {
+     "type": "img",
+     "make": {
+      "fn": "card",
+      "args": [
+       "ON PAPER",
+       [
+        "Receipt books",
+        "Dues in a register",
+        "Calls to each parent"
+       ]
+      ],
+      "kw": {
+       "w": 900,
+       "accent": [
+        228,
+        87,
+        46
+       ],
+       "size": 54
+      }
+     },
+     "x": 540.0,
+     "y": 600,
+     "at": 5,
+     "anim": "rise",
+     "delay": 0
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "card",
+      "args": [
+       "ON ONE SYSTEM",
+       [
+        "Fees raised in one click",
+        "Numbered receipts",
+        "Defaulters list"
+       ]
+      ],
+      "kw": {
+       "w": 900,
+       "accent": [
+        46,
+        196,
+        182
+       ],
+       "size": 54
+      }
+     },
+     "x": 540.0,
+     "y": 1050,
+     "at": 6,
+     "anim": "rise",
+     "delay": 0.2
+    }
+   ],
+   "until": 8,
+   "kind": "compare",
+   "seed": 5
+  },
+  {
+   "place": "office",
+   "dim": 0.7,
+   "els": [
+    {
+     "type": "head",
+     "lines": [
+      "Who still",
+      "owes fees?"
+     ],
+     "hl": [
+      "owes"
+     ],
+     "size": 80,
+     "x": 540.0,
+     "y": 230,
+     "at": 8,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "browser",
+      "args": [
+       "assets/shots/school-fees-1600.webp"
+      ],
+      "kw": {
+       "w": 960
+      }
+     },
+     "x": 540.0,
+     "y": 860,
+     "at": 8,
+     "anim": "rise",
+     "delay": 0.1
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "Ready WhatsApp reminder"
+      ],
+      "kw": {
+       "size": 46
+      }
+     },
+     "x": 540.0,
+     "y": 1315,
+     "at": 9,
+     "anim": "pop",
+     "delay": 0.2
+    }
+   ],
+   "until": 10,
+   "kind": "screen",
+   "seed": 6
+  },
+  {
+   "place": "city",
+   "dim": 0.55,
+   "no_caps": true,
+   "els": [
+    {
+     "type": "img",
+     "make": {
+      "fn": "logo",
+      "args": [],
+      "kw": {
+       "size": 190
+      }
+     },
+     "x": 540.0,
+     "y": 420,
+     "at": 10,
+     "anim": "pop",
+     "delay": 0
+    },
+    {
+     "type": "head",
+     "lines": [
+      "Fee day,",
+      "no queue."
+     ],
+     "hl": [
+      "queue."
+     ],
+     "size": 90,
+     "x": 540.0,
+     "y": 600,
+     "at": 10,
+     "delay": 0.2,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "Try a live demo: resolveai.cc"
+      ],
+      "kw": {
+       "size": 46
+      }
+     },
+     "x": 540.0,
+     "y": 1000,
+     "at": 10,
+     "anim": "pop",
+     "delay": 0.6
+    },
+    {
+     "type": "head",
+     "lines": [
+      "Follow for more"
+     ],
+     "hl": [],
+     "size": 56,
+     "x": 540.0,
+     "y": 1120,
+     "at": 11,
+     "delay": 0.3,
+     "align": "center",
+     "color": "white"
+    }
+   ],
+   "until": "end",
+   "kind": "ending",
+   "seed": 7
+  }
+ ],
+ "cover": {
+  "kicker": "BEFORE / AFTER",
+  "big": [
+   "FEE DAY.",
+   "NO QUEUE."
+  ],
+  "sub": "A typical school office, on one system",
+  "place": "school",
+  "person": [
+   "clerk",
+   "happy",
+   2
+  ]
+ },
+ "sources": [
+  {
+   "fact": "UDISE+ 2025-26 report released by the Ministry of Education: enrolment in private unaided recognised schools rose from 9 crore (2023-24) to 9.89 crore (2025-26) (PTI)",
+   "url": "https://news.careers360.com/udise-report-2025-26-enrolment-in-govt-schools-fell-nearly-86-lakh-moe/amp",
+   "fetched": "2026-11-18"
+  },
+  {
+   "fact": "Same PTI report: private unaided recognised schools enrolment rose from 9 crore to 9.89 crore between 2023-24 and 2025-26, MoE UDISE+ report",
+   "url": "https://www.dtnext.in/news/national/enrolment-in-government-schools-fell-by-nearly-86-lakh-between-2023-24-and-2025-26-moe-report",
+   "fetched": "2026-11-18"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-18T20:30:00+05:30",
+  "instagram_caption": "Fee day at a typical school office. Sound familiar?\n\nA queue of parents, a receipt book and a dues register. Private unaided recognised schools in India now teach 9.89 crore students, up from 9 crore in 2023-24, so there are more fees to track than ever.\n\nRaise the month's fees for every class in one click, give a numbered receipt for every payment, and check one defaulters list instead of calling every parent.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: Ministry of Education UDISE+ 2025-26 report, as reported by PTI (Careers360, DT Next).\n\nHow does your school office handle fee day today?\n\n#resolveai #schoolerp #schoolfees #schoolmanagement #education",
+  "youtube_title": "School Fee Day: Paper Receipts vs One System",
+  "youtube_description": "Fee day at a typical school office: a queue, a receipt book and a dues register. Private unaided schools in India now teach 9.89 crore students, so there are more fees to track. Here is the same day on one system, with fees raised in one click, numbered receipts and a defaulters list.\n\nTry a live demo with sample data at https://www.resolveai.cc (no sign-up).\n\nSources:\n• Careers360 (PTI), \"UDISE 2025-26 Report: Government school enrolment falls, private schools record strong growth\" (fetched Nov 18, 2026)\n• DT Next (PTI), \"Enrolment in government schools fell by nearly 86 lakh between 2023-24 and 2025-26: MoE report\" (fetched Nov 18, 2026)\n\nResolveAI: ERP software and AI automation for established businesses. Instagram: @resolveai.software\n\n#Shorts #ResolveAI #SchoolERP"
+ },
+ "math": [
+  {
+   "expr": "9.89",
+   "expect": "9.89",
+   "note": "crore students in private unaided recognised schools, 2025-26 (MoE UDISE+ via PTI)"
+  },
+  {
+   "expr": "9",
+   "expect": "9",
+   "note": "crore students in 2023-24 (MoE UDISE+ via PTI)"
+  },
+  {
+   "expr": "2026-2024",
+   "expect": "2",
+   "note": "two years earlier: 2023-24 to 2025-26"
+  },
+  {
+   "expr": "round((9.89-9)*100)",
+   "expect": "89",
+   "note": "about 89 lakh more students, PTI says more than 88 lakh"
+  }
+ ]
+}
