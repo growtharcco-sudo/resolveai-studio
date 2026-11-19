@@ -1,0 +1,561 @@
+{
+ "id": "005_opd_queue",
+ "series": "ONE SCREEN",
+ "voice": "am_liam",
+ "speed": 1.15,
+ "header": "ONE SCREEN",
+ "phrases": [
+  {
+   "say": "A typical hospital O P D at ten in the morning. Who is next?",
+   "cap": "A typical hospital OPD at 10 in the morning. Who is next?",
+   "pause": 0.18
+  },
+  {
+   "say": "Paper slips, a register, and a crowd at the front desk.",
+   "cap": "Paper slips, a register, and a crowd at the front desk.",
+   "pause": 0.35
+  },
+  {
+   "say": "India has issued nearly twenty four crore Scan and Register tokens.",
+   "cap": "India has issued nearly 24 crore Scan & Register tokens.",
+   "pause": 0.18
+  },
+  {
+   "say": "For faster O P D registration, says the Health Ministry.",
+   "cap": "For faster OPD registration, says the Health Ministry.",
+   "pause": 0.18
+  },
+  {
+   "say": "Registration is quick. The queue inside is the next step.",
+   "cap": "Registration is quick. The queue inside is the next step.",
+   "pause": 0.5
+  },
+  {
+   "say": "Every patient gets a token for their doctor.",
+   "cap": "Every patient gets a token for their doctor.",
+   "pause": 0.18
+  },
+  {
+   "say": "Each visit shows booked, waiting or seen.",
+   "cap": "Each visit shows booked, waiting or seen.",
+   "pause": 0.18
+  },
+  {
+   "say": "Finish the visit, and the bill has the fee and tests.",
+   "cap": "Finish the visit, and the bill has the fee and tests.",
+   "pause": 0.5
+  },
+  {
+   "say": "Filter by doctor and see who is waiting right now.",
+   "cap": "Filter by doctor and see who is waiting right now.",
+   "pause": 0.18
+  },
+  {
+   "say": "No slips, no shouting names across the hall.",
+   "cap": "No slips, no shouting names across the hall.",
+   "pause": 0.5
+  },
+  {
+   "say": "Try a live demo at resolve A I dot C C.",
+   "cap": "Try a live demo at resolveai.cc",
+   "pause": 0.18
+  },
+  {
+   "say": "Follow for more.",
+   "cap": "Follow for more.",
+   "pause": 0.35
+  }
+ ],
+ "scenes": [
+  {
+   "place": "hospital",
+   "dim": 0.15,
+   "els": [
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "ONE SCREEN"
+      ],
+      "kw": {
+       "size": 42
+      }
+     },
+     "x": 540.0,
+     "y": 300,
+     "at": -1,
+     "anim": "pop",
+     "delay": 0
+    },
+    {
+     "type": "head",
+     "lines": [
+      "Who is next",
+      "in your OPD?"
+     ],
+     "hl": [
+      "OPD?"
+     ],
+     "size": 104,
+     "x": 540.0,
+     "y": 370,
+     "at": -1,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "person",
+      "args": [
+       "doctor",
+       "stress",
+       1
+      ],
+      "kw": {
+       "scale": 1.3
+      }
+     },
+     "x": 760,
+     "y": 981.0,
+     "at": -1,
+     "anim": "rise",
+     "delay": 0,
+     "float": 0
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "PAPER SLIPS"
+      ],
+      "kw": {
+       "size": 50,
+       "bg": [
+        228,
+        87,
+        46
+       ],
+       "fg": [
+        255,
+        255,
+        255
+       ]
+      }
+     },
+     "x": 330,
+     "y": 1180,
+     "at": 1,
+     "anim": "pop",
+     "delay": 0.3
+    }
+   ],
+   "until": 2,
+   "kind": "hook",
+   "seed": 3
+  },
+  {
+   "place": "hospital",
+   "dim": 0.62,
+   "els": [
+    {
+     "type": "head",
+     "lines": [
+      "Nearly"
+     ],
+     "hl": [],
+     "size": 76,
+     "x": 540.0,
+     "y": 470,
+     "at": 2,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "count",
+     "to": 24,
+     "prefix": "",
+     "suffix": "",
+     "dec": 0,
+     "indian": false,
+     "size": 210,
+     "x": 540.0,
+     "y": 700,
+     "color": "gold",
+     "at": 2,
+     "delay": 0.15,
+     "dur": 1.1
+    },
+    {
+     "type": "head",
+     "lines": [
+      "crore Scan & Register tokens"
+     ],
+     "hl": [],
+     "size": 60,
+     "x": 540.0,
+     "y": 1040,
+     "at": 3,
+     "delay": 0.1,
+     "align": "center",
+     "color": "white"
+    }
+   ],
+   "until": 5,
+   "kind": "number",
+   "seed": 4
+  },
+  {
+   "place": "hospital",
+   "dim": 0.6,
+   "els": [
+    {
+     "type": "head",
+     "lines": [
+      "One OPD screen"
+     ],
+     "hl": [],
+     "size": 84,
+     "x": 540.0,
+     "y": 290,
+     "at": 5,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "card",
+      "args": [
+       null,
+       [
+        "Token per doctor"
+       ]
+      ],
+      "kw": {
+       "w": 800,
+       "size": 52,
+       "accent": [
+        46,
+        196,
+        182
+       ],
+       "dark": true
+      }
+     },
+     "x": 600.0,
+     "y": 600,
+     "at": 5,
+     "anim": "left",
+     "delay": 0.15
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "icon",
+      "args": [
+       "user"
+      ],
+      "kw": {
+       "size": 130,
+       "bg": [
+        46,
+        196,
+        182
+       ]
+      }
+     },
+     "x": 150,
+     "y": 600,
+     "at": 5,
+     "anim": "pop",
+     "delay": 0.05
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "card",
+      "args": [
+       null,
+       [
+        "Waiting or seen"
+       ]
+      ],
+      "kw": {
+       "w": 800,
+       "size": 52,
+       "accent": [
+        46,
+        196,
+        182
+       ],
+       "dark": true
+      }
+     },
+     "x": 600.0,
+     "y": 800,
+     "at": 6,
+     "anim": "left",
+     "delay": 0.15
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "icon",
+      "args": [
+       "clock"
+      ],
+      "kw": {
+       "size": 130,
+       "bg": [
+        46,
+        196,
+        182
+       ]
+      }
+     },
+     "x": 150,
+     "y": 800,
+     "at": 6,
+     "anim": "pop",
+     "delay": 0.05
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "card",
+      "args": [
+       null,
+       [
+        "Bill on finish"
+       ]
+      ],
+      "kw": {
+       "w": 800,
+       "size": 52,
+       "accent": [
+        201,
+        162,
+        39
+       ],
+       "dark": false
+      }
+     },
+     "x": 600.0,
+     "y": 1000,
+     "at": 7,
+     "anim": "left",
+     "delay": 0.15
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "icon",
+      "args": [
+       "rupee"
+      ],
+      "kw": {
+       "size": 130,
+       "bg": [
+        201,
+        162,
+        39
+       ]
+      }
+     },
+     "x": 150,
+     "y": 1000,
+     "at": 7,
+     "anim": "pop",
+     "delay": 0.05
+    }
+   ],
+   "until": 8,
+   "kind": "steps",
+   "seed": 5
+  },
+  {
+   "place": "hospital",
+   "dim": 0.7,
+   "els": [
+    {
+     "type": "head",
+     "lines": [
+      "The whole OPD,",
+      "one screen"
+     ],
+     "hl": [
+      "screen"
+     ],
+     "size": 80,
+     "x": 540.0,
+     "y": 230,
+     "at": 8,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "browser",
+      "args": [
+       "assets/shots/hospital-opd-1600.webp"
+      ],
+      "kw": {
+       "w": 960
+      }
+     },
+     "x": 540.0,
+     "y": 860,
+     "at": 8,
+     "anim": "rise",
+     "delay": 0.1
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "Filter by doctor"
+      ],
+      "kw": {
+       "size": 46
+      }
+     },
+     "x": 540.0,
+     "y": 1315,
+     "at": 9,
+     "anim": "pop",
+     "delay": 0.2
+    }
+   ],
+   "until": 10,
+   "kind": "screen",
+   "seed": 6
+  },
+  {
+   "place": "city",
+   "dim": 0.55,
+   "no_caps": true,
+   "els": [
+    {
+     "type": "img",
+     "make": {
+      "fn": "logo",
+      "args": [],
+      "kw": {
+       "size": 190
+      }
+     },
+     "x": 540.0,
+     "y": 420,
+     "at": 10,
+     "anim": "pop",
+     "delay": 0
+    },
+    {
+     "type": "head",
+     "lines": [
+      "Who is next?",
+      "Now you know."
+     ],
+     "hl": [
+      "know."
+     ],
+     "size": 90,
+     "x": 540.0,
+     "y": 600,
+     "at": 10,
+     "delay": 0.2,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "Try a live demo: resolveai.cc"
+      ],
+      "kw": {
+       "size": 46
+      }
+     },
+     "x": 540.0,
+     "y": 1000,
+     "at": 10,
+     "anim": "pop",
+     "delay": 0.6
+    },
+    {
+     "type": "head",
+     "lines": [
+      "Follow for more"
+     ],
+     "hl": [],
+     "size": 56,
+     "x": 540.0,
+     "y": 1120,
+     "at": 11,
+     "delay": 0.3,
+     "align": "center",
+     "color": "white"
+    }
+   ],
+   "until": "end",
+   "kind": "ending",
+   "seed": 7
+  }
+ ],
+ "cover": {
+  "kicker": "ONE SCREEN",
+  "big": [
+   "WHO IS NEXT?",
+   "ONE OPD SCREEN."
+  ],
+  "sub": "A typical hospital OPD, token to bill",
+  "place": "hospital",
+  "person": [
+   "doctor",
+   "happy",
+   1
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Health Ministry (Mission Steering Group, ABDM): nearly 24 crore Scan & Register tokens generated, facilitating faster outpatient department (OPD) registration",
+   "url": "https://ddnews.gov.in/en/ayushman-bharat-digital-mission-emerges-as-one-of-worlds-largest-digital-health-ecosystems-with-over-93-95-crore-abha-ids-j-p-nadda/",
+   "fetched": "2026-11-19"
+  },
+  {
+   "fact": "Same figures (IBEF, Jul 13, 2026): nearly 24 crore Scan & Register tokens to facilitate faster OPD registration",
+   "url": "https://www.ibef.org/news/ayushman-bharat-digital-mission-crosses-93-95-crore-abha-ids-strengthens-india-s-digital-healthcare-ecosystem",
+   "fetched": "2026-11-19"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-19T20:30:00+05:30",
+  "instagram_caption": "Who is next in your OPD?\n\nIndia has issued nearly 24 crore Scan & Register tokens for faster OPD registration, says the Health Ministry. But in a typical hospital, the queue inside still runs on paper slips and a register.\n\nGive every patient a token for their doctor, see who is booked, waiting or seen, and bill the fee and tests when the visit ends, all on one OPD screen.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: Health Ministry figures reported by DD News and IBEF.\n\nHow does your OPD decide who goes in next?\n\n#resolveai #hospitalmanagement #opd #healthtech #hospitalsoftware",
+  "youtube_title": "Who Is Next in Your OPD? One Screen for the Whole Queue",
+  "youtube_description": "A typical hospital OPD runs on paper slips and a register. India has issued nearly 24 crore Scan & Register tokens for faster OPD registration, says the Health Ministry. Here is one OPD screen: a token per doctor, booked, waiting or seen, and the bill with the fee and tests when the visit ends.\n\nTry a live demo with sample data at https://www.resolveai.cc (no sign-up).\n\nSources:\n• DD News, \"Ayushman Bharat Digital Mission emerges as one of world's largest digital health ecosystems with over 93.95 crore ABHA IDs: J.P. Nadda\" (fetched Nov 19, 2026)\n• IBEF, \"Ayushman Bharat Digital Mission crosses 93.95 crore ABHA IDs, strengthens India's digital healthcare ecosystem\" (fetched Nov 19, 2026)\n\nResolveAI: ERP software and AI automation for established businesses. Instagram: @resolveai.software\n\n#Shorts #ResolveAI #HospitalManagement"
+ },
+ "math": [
+  {
+   "expr": "24",
+   "expect": "24",
+   "note": "nearly 24 crore Scan & Register tokens (Health Ministry via DD News, IBEF)"
+  },
+  {
+   "expr": "10",
+   "expect": "10",
+   "note": "10 in the morning: the typical example's time, not a statistic"
+  }
+ ]
+}

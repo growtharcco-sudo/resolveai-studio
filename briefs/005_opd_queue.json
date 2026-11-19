@@ -1,0 +1,167 @@
+{
+ "id": "005_opd_queue",
+ "series": "ONE SCREEN",
+ "speed": 1.15,
+ "beats": [
+  {
+   "say": "A typical hospital O P D at ten in the morning. Who is next?",
+   "cap": "A typical hospital OPD at 10 in the morning. Who is next?",
+   "show": {
+    "kind": "hook",
+    "place": "hospital",
+    "kicker": "ONE SCREEN",
+    "lines": [
+     "Who is next",
+     "in your OPD?"
+    ],
+    "hl": [
+     "OPD?"
+    ],
+    "person": [
+     "doctor",
+     "stress",
+     1
+    ],
+    "badge": "PAPER SLIPS"
+   }
+  },
+  {
+   "say": "Paper slips, a register, and a crowd at the front desk.",
+   "pause": 0.35
+  },
+  {
+   "say": "India has issued nearly twenty four crore Scan and Register tokens.",
+   "cap": "India has issued nearly 24 crore Scan & Register tokens.",
+   "show": {
+    "kind": "number",
+    "to": 24,
+    "dec": 0,
+    "label": "Nearly",
+    "sub": "crore Scan & Register tokens",
+    "color": "gold",
+    "place": "hospital"
+   }
+  },
+  {
+   "say": "For faster O P D registration, says the Health Ministry.",
+   "cap": "For faster OPD registration, says the Health Ministry."
+  },
+  {
+   "say": "Registration is quick. The queue inside is the next step.",
+   "pause": 0.5
+  },
+  {
+   "say": "Every patient gets a token for their doctor.",
+   "show": {
+    "kind": "steps",
+    "title": "One OPD screen",
+    "steps": [
+     [
+      "user",
+      "Token per doctor"
+     ],
+     [
+      "clock",
+      "Waiting or seen"
+     ],
+     [
+      "rupee",
+      "Bill on finish"
+     ]
+    ],
+    "hl": 2,
+    "place": "hospital"
+   }
+  },
+  {
+   "say": "Each visit shows booked, waiting or seen."
+  },
+  {
+   "say": "Finish the visit, and the bill has the fee and tests.",
+   "pause": 0.5
+  },
+  {
+   "say": "Filter by doctor and see who is waiting right now.",
+   "show": {
+    "kind": "screen",
+    "shot": "hospital-opd",
+    "device": "browser",
+    "title": [
+     "The whole OPD,",
+     "one screen"
+    ],
+    "hl": [
+     "screen"
+    ],
+    "callout": "Filter by doctor",
+    "place": "hospital"
+   }
+  },
+  {
+   "say": "No slips, no shouting names across the hall.",
+   "pause": 0.5
+  },
+  {
+   "say": "Try a live demo at resolve A I dot C C.",
+   "cap": "Try a live demo at resolveai.cc",
+   "show": {
+    "kind": "ending",
+    "lines": [
+     "Who is next?",
+     "Now you know."
+    ],
+    "hl": [
+     "know."
+    ]
+   }
+  },
+  {
+   "say": "Follow for more."
+  }
+ ],
+ "cover": {
+  "kicker": "ONE SCREEN",
+  "big": [
+   "WHO IS NEXT?",
+   "ONE OPD SCREEN."
+  ],
+  "sub": "A typical hospital OPD, token to bill",
+  "place": "hospital",
+  "person": [
+   "doctor",
+   "happy",
+   1
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Health Ministry (Mission Steering Group, ABDM): nearly 24 crore Scan & Register tokens generated, facilitating faster outpatient department (OPD) registration",
+   "url": "https://ddnews.gov.in/en/ayushman-bharat-digital-mission-emerges-as-one-of-worlds-largest-digital-health-ecosystems-with-over-93-95-crore-abha-ids-j-p-nadda/",
+   "fetched": "2026-11-19"
+  },
+  {
+   "fact": "Same figures (IBEF, Jul 13, 2026): nearly 24 crore Scan & Register tokens to facilitate faster OPD registration",
+   "url": "https://www.ibef.org/news/ayushman-bharat-digital-mission-crosses-93-95-crore-abha-ids-strengthens-india-s-digital-healthcare-ecosystem",
+   "fetched": "2026-11-19"
+  }
+ ],
+ "math": [
+  {
+   "expr": "24",
+   "expect": "24",
+   "note": "nearly 24 crore Scan & Register tokens (Health Ministry via DD News, IBEF)"
+  },
+  {
+   "expr": "10",
+   "expect": "10",
+   "note": "10 in the morning: the typical example's time, not a statistic"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-19T20:30:00+05:30",
+  "instagram_caption": "Who is next in your OPD?\n\nIndia has issued nearly 24 crore Scan & Register tokens for faster OPD registration, says the Health Ministry. But in a typical hospital, the queue inside still runs on paper slips and a register.\n\nGive every patient a token for their doctor, see who is booked, waiting or seen, and bill the fee and tests when the visit ends, all on one OPD screen.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: Health Ministry figures reported by DD News and IBEF.\n\nHow does your OPD decide who goes in next?\n\n#resolveai #hospitalmanagement #opd #healthtech #hospitalsoftware",
+  "youtube_title": "Who Is Next in Your OPD? One Screen for the Whole Queue",
+  "youtube_description": "A typical hospital OPD runs on paper slips and a register. India has issued nearly 24 crore Scan & Register tokens for faster OPD registration, says the Health Ministry. Here is one OPD screen: a token per doctor, booked, waiting or seen, and the bill with the fee and tests when the visit ends.\n\nTry a live demo with sample data at https://www.resolveai.cc (no sign-up).\n\nSources:\n• DD News, \"Ayushman Bharat Digital Mission emerges as one of world's largest digital health ecosystems with over 93.95 crore ABHA IDs: J.P. Nadda\" (fetched Nov 19, 2026)\n• IBEF, \"Ayushman Bharat Digital Mission crosses 93.95 crore ABHA IDs, strengthens India's digital healthcare ecosystem\" (fetched Nov 19, 2026)\n\nResolveAI: ERP software and AI automation for established businesses. Instagram: @resolveai.software\n\n#Shorts #ResolveAI #HospitalManagement"
+ }
+}
