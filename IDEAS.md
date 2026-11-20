@@ -8,7 +8,7 @@ Rotate industries and series. Examples are typical examples, never real clients.
 - ONE SCREEN: the reorder alert. "Items below reorder level" on the factory demo dashboard. Factory.
 - [used 004] BEFORE / AFTER: a school office on fee day, paper receipts vs the fees screen. School.
 - [used P003] QUICK FACT: India's MSME count and their share of exports (msme.gov.in / PIB). What it means for owners.
-- N STEPS: 3 steps to collect dues faster (reminders, ageing list, one view of who owes what). Distributor.
+- [used C006] N STEPS: 3 steps to collect dues faster (reminders, ageing list, one view of who owes what). Distributor.
 - MONEY LEAK: missed follow-ups. Enquiries answered late on WhatsApp. Agency.
 - [used 005] ONE SCREEN: OPD queue and bed status on the hospital demo. Hospital.
 - [used 003] QUICK FACT: GST e-invoicing threshold for businesses (cbic.gov.in / gst.gov.in, check the current limit). Distributor.
@@ -16,5 +16,5 @@ Rotate industries and series. Examples are typical examples, never real clients.
 - N SIGNS: your agency needs a project tracker (deadlines in heads, clients chasing updates). Agency.
 - ONE SCREEN: attendance in one tap on the school demo. School.
 - MONEY LEAK: production wastage nobody records. Factory.
-- QUICK FACT: how many businesses use AI (find a sourced survey, India or global). Office.
+- [used 006] QUICK FACT: how many businesses use AI (find a sourced survey, India or global). Office.
 - N STEPS: 4 steps to move from Excel to a system without stopping work. Any.

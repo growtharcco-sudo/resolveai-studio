@@ -1,0 +1,172 @@
+{
+ "id": "006_ai_one_job",
+ "series": "QUICK FACT",
+ "speed": 1.15,
+ "beats": [
+  {
+   "say": "Nearly nine in ten firms now use A I. So who is making money from it?",
+   "cap": "Nearly 9 in 10 firms now use AI. So who is making money from it?",
+   "show": {
+    "kind": "hook",
+    "place": "office",
+    "kicker": "QUICK FACT",
+    "lines": [
+     "9 in 10 use AI.",
+     "Who profits?"
+    ],
+    "hl": [
+     "profits?"
+    ],
+    "person": [
+     "owner",
+     "phone",
+     1
+    ],
+    "badge": "MCKINSEY 2026"
+   }
+  },
+  {
+   "say": "McKinsey asked over seventeen hundred people this year.",
+   "cap": "McKinsey asked over 1,700 people this year."
+  },
+  {
+   "say": "Only thirty seven percent say A I has added anything to profit.",
+   "cap": "Only 37% say AI has added anything to profit.",
+   "pause": 0.5,
+   "show": {
+    "kind": "number",
+    "to": 37,
+    "suffix": "%",
+    "label": "Only",
+    "sub": "see any profit impact",
+    "color": "red",
+    "place": "office"
+   }
+  },
+  {
+   "say": "For an owner, the lesson is simple. Give A I one real job.",
+   "cap": "For an owner, the lesson is simple. Give AI one real job.",
+   "pause": 0.5
+  },
+  {
+   "say": "A new enquiry comes in from your website.",
+   "show": {
+    "kind": "steps",
+    "title": "Give AI one job",
+    "steps": [
+     [
+      "phone",
+      "Enquiry comes in"
+     ],
+     [
+      "check",
+      "AI scores it"
+     ],
+     [
+      "whatsapp",
+      "WhatsApp reply"
+     ]
+    ],
+    "hl": 2,
+    "place": "office"
+   }
+  },
+  {
+   "say": "A I scores it in seconds.",
+   "cap": "AI scores it in seconds."
+  },
+  {
+   "say": "Good leads get a WhatsApp reply and land in your C R M.",
+   "cap": "Good leads get a WhatsApp reply and land in your CRM.",
+   "pause": 0.5
+  },
+  {
+   "say": "Here it is as one workflow, step by step.",
+   "show": {
+    "kind": "screen",
+    "shot": "flows-home",
+    "device": "browser",
+    "title": [
+     "One job,",
+     "every enquiry"
+    ],
+    "hl": [
+     "enquiry"
+    ],
+    "callout": "Lead to AI to WhatsApp",
+    "place": "office"
+   }
+  },
+  {
+   "say": "Run it on sample data and see what went in and what came out.",
+   "pause": 0.5
+  },
+  {
+   "say": "Try a live demo at resolve A I dot C C.",
+   "cap": "Try a live demo at resolveai.cc",
+   "show": {
+    "kind": "ending",
+    "lines": [
+     "One job first.",
+     "Then grow."
+    ],
+    "hl": [
+     "grow."
+    ]
+   }
+  },
+  {
+   "say": "Follow for more."
+  }
+ ],
+ "cover": {
+  "kicker": "QUICK FACT",
+  "big": [
+   "9 IN 10 USE AI.",
+   "GIVE IT A JOB."
+  ],
+  "sub": "McKinsey 2026: only 37% see profit impact",
+  "place": "office",
+  "person": [
+   "owner",
+   "happy",
+   1
+  ]
+ },
+ "sources": [
+  {
+   "fact": "McKinsey, The state of AI in 2026: On the road to ROI (August 2026): 'Nearly nine in ten respondents report regular use of AI in at least one business function'; 'Thirty-seven percent of respondents attribute at least some EBIT impact to AI use'; survey of 1,719 participants, May 4 to June 8, 2026",
+   "url": "https://www.mckinsey.com/~/media/mckinsey/business%20functions/quantumblack/our%20insights/the%20state%20of%20ai/the-state-of-ai-in-2026-on-the-road-to-roi-aug-2026.pdf",
+   "fetched": "2026-11-20"
+  }
+ ],
+ "math": [
+  {
+   "expr": "9/10",
+   "expect": "0.9",
+   "note": "nearly nine in ten respondents report regular AI use in at least one business function (McKinsey, Aug 2026)"
+  },
+  {
+   "expr": "37",
+   "expect": "37",
+   "note": "percent of respondents attributing at least some EBIT impact to AI use (McKinsey, Aug 2026)"
+  },
+  {
+   "expr": "1719 > 1700",
+   "expect": "1",
+   "note": "'over 1,700': 1,719 survey participants (McKinsey)"
+  },
+  {
+   "expr": "2026",
+   "expect": "2026",
+   "note": "survey year, fielded May 4 to June 8, 2026"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-20T20:30:00+05:30",
+  "instagram_caption": "Nearly 9 in 10 firms use AI. Only 37% see profit from it.\n\nIn McKinsey's State of AI 2026 survey of 1,719 people, nearly nine in ten report regular use of AI in at least one business function. But only 37% say AI has made any impact on profit (EBIT).\n\nStart with one real job for AI. A typical example: every website enquiry gets scored in seconds, and good leads get a WhatsApp reply and land in your CRM.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: McKinsey, The state of AI in 2026 (August 2026).\n\nWhat is one job in your business you would hand to AI first?\n\n#resolveai #ai #automation #business #msme",
+  "youtube_title": "9 in 10 Firms Use AI, Only 37% See Profit: Give It One Job",
+  "youtube_description": "Nearly nine in ten respondents in McKinsey's State of AI 2026 survey report regular AI use, but only 37% say it has made any impact on profit (EBIT). The lesson for an owner: give AI one real job first, like scoring every website enquiry and sending good leads a WhatsApp reply.\n\nTry a live demo with sample data at https://www.resolveai.cc (no sign-up).\n\nSources:\n• McKinsey, \"The state of AI in 2026: On the road to ROI\" (fetched Nov 20, 2026)\n\nResolveAI: ERP software and AI automation for established businesses. Instagram: @resolveai.software\n\n#Shorts #ResolveAI #AI"
+ }
+}

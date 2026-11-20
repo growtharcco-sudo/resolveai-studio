@@ -1,0 +1,97 @@
+{
+ "id": "C006_collect_dues",
+ "series": "5 STEPS",
+ "slides": [
+  {
+   "kind": "cover",
+   "kicker": "SAVE THIS",
+   "lines": [
+    "Dues stuck",
+    "for months?"
+   ],
+   "hl": [
+    "months?"
+   ],
+   "place": "warehouse",
+   "sub": "5 steps. Swipe."
+  },
+  {
+   "kind": "point",
+   "n": 1,
+   "title": "Know the 45 day rule",
+   "body": "Supply as a micro or small business? A buyer who pays after 45 days owes compound interest at 3x the RBI bank rate.",
+   "icon": "rupee"
+  },
+  {
+   "kind": "point",
+   "n": 2,
+   "title": "Put the due date on every bill",
+   "body": "Write the payment terms and the due date on the invoice, so nobody can say they did not know.",
+   "icon": "paper"
+  },
+  {
+   "kind": "point",
+   "n": 3,
+   "title": "Keep one ageing list",
+   "body": "Sort dues by days overdue: 0 to 30, 31 to 45, over 45. Chase the oldest first.",
+   "icon": "chart"
+  },
+  {
+   "kind": "point",
+   "n": 4,
+   "title": "Remind before the due date",
+   "body": "Send a polite reminder a few days before the due date, then again on the day.",
+   "icon": "bell"
+  },
+  {
+   "kind": "point",
+   "n": 5,
+   "title": "See every due on one screen",
+   "body": "Overdue invoices and the amount to collect, on one dashboard.",
+   "shot": "trading-home"
+  },
+  {
+   "kind": "cta",
+   "lines": [
+    "Who owes you?",
+    "Know today."
+   ],
+   "hl": [
+    "today."
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "fact": "PIB (Ministry of MSME, 13 Mar 2023): when a buyer does not pay a Micro & Small Enterprise supplier within 45 days of acceptance of the goods/service, the buyer is liable to pay compound interest with monthly rests at three times the bank rate notified by RBI; MSEs can file delayed payment cases on the Samadhaan portal, taken up by MSE Facilitation Councils",
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1906358&reg=3&lang=2",
+   "fetched": "2026-11-20"
+  },
+  {
+   "fact": "PIB (Ministry of MSME, 29 Jul 2024): MSE Facilitation Councils set up in States/UTs to deal with cases of delayed payments; SAMADHAAN Portal launched on 30.10.2017",
+   "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2038549&reg=48&lang=2",
+   "fetched": "2026-11-20"
+  }
+ ],
+ "math": [
+  {
+   "expr": "45",
+   "expect": "45",
+   "note": "days, MSMED Act payment limit to MSE suppliers (PIB, 13 Mar 2023)"
+  },
+  {
+   "expr": "3",
+   "expect": "3",
+   "note": "interest at three times the RBI bank rate, compounded monthly (PIB, 13 Mar 2023)"
+  },
+  {
+   "expr": "30 + 1",
+   "expect": "31",
+   "note": "ageing buckets 0 to 30, 31 to 45, over 45 (a typical example)"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-21T11:00:00+05:30",
+  "instagram_caption": "Dues stuck for months? Save this.\n\nIf you supply as a micro or small business, the law is on your side. A buyer who does not pay within 45 days of accepting your goods or service owes compound interest at three times the RBI bank rate, says the MSME Ministry via PIB. Stuck cases can go to the MSME Samadhaan portal.\n\n5 steps: know the 45 day rule, put the due date on every bill, keep one ageing list, remind before the due date, and see every due on one screen.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: PIB, Ministry of MSME (Mar 2023, Jul 2024).\n\nWhich of these 5 steps does your business already follow?\n\n#resolveai #msme #receivables #cashflow #smallbusiness"
+ }
+}
