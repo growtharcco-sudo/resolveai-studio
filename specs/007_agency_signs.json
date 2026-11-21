@@ -1,0 +1,650 @@
+{
+ "id": "007_agency_signs",
+ "series": "4 SIGNS",
+ "voice": "am_liam",
+ "speed": 1.15,
+ "header": "4 SIGNS",
+ "phrases": [
+  {
+   "say": "Four signs your agency has outgrown WhatsApp groups.",
+   "cap": "Four signs your agency has outgrown WhatsApp groups.",
+   "pause": 0.18
+  },
+  {
+   "say": "And number four costs the most.",
+   "cap": "And #4 costs the most.",
+   "pause": 0.35
+  },
+  {
+   "say": "Picture a typical agency on a Friday evening.",
+   "cap": "Picture a typical agency on a Friday evening.",
+   "pause": 0.18
+  },
+  {
+   "say": "A client asks where their reel is.",
+   "cap": "A client asks where their reel is.",
+   "pause": 0.2
+  },
+  {
+   "say": "And nobody on the team knows.",
+   "cap": "And nobody on the team knows.",
+   "pause": 0.5
+  },
+  {
+   "say": "Sign one. Deadlines live in one person's head.",
+   "cap": "Sign one. Deadlines live in one person's head.",
+   "pause": 0.18
+  },
+  {
+   "say": "Sign two. Clients chase you for updates on WhatsApp.",
+   "cap": "Sign two. Clients chase you for updates on WhatsApp.",
+   "pause": 0.18
+  },
+  {
+   "say": "Sign three. Nobody can say who is overloaded this week.",
+   "cap": "Sign three. Nobody can say who is overloaded this week.",
+   "pause": 0.18
+  },
+  {
+   "say": "And sign four. You find late work only when the client complains.",
+   "cap": "And sign four. You find late work only when the client complains.",
+   "pause": 0.5
+  },
+  {
+   "say": "Agency Hub puts every deliverable in one place.",
+   "cap": "Agency Hub puts every deliverable in one place.",
+   "pause": 0.18
+  },
+  {
+   "say": "Owner, due date and status, plus overdue work and each person's workload.",
+   "cap": "Owner, due date and status, plus overdue work and each person's workload.",
+   "pause": 0.5
+  },
+  {
+   "say": "Try a live demo at resolve A I dot C C.",
+   "cap": "Try a live demo at resolveai.cc",
+   "pause": 0.18
+  },
+  {
+   "say": "Follow for more.",
+   "cap": "Follow for more.",
+   "pause": 0.35
+  }
+ ],
+ "scenes": [
+  {
+   "place": "office",
+   "dim": 0.15,
+   "els": [
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "4 SIGNS"
+      ],
+      "kw": {
+       "size": 42
+      }
+     },
+     "x": 540.0,
+     "y": 300,
+     "at": -1,
+     "anim": "pop",
+     "delay": 0
+    },
+    {
+     "type": "head",
+     "lines": [
+      "Agency run",
+      "on WhatsApp?"
+     ],
+     "hl": [
+      "WhatsApp?"
+     ],
+     "size": 104,
+     "x": 540.0,
+     "y": 370,
+     "at": -1,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "person",
+      "args": [
+       "owner",
+       "phone",
+       2
+      ],
+      "kw": {
+       "scale": 1.3
+      }
+     },
+     "x": 760,
+     "y": 981.0,
+     "at": -1,
+     "anim": "rise",
+     "delay": 0,
+     "float": 0
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "#4 COSTS THE MOST"
+      ],
+      "kw": {
+       "size": 50,
+       "bg": [
+        228,
+        87,
+        46
+       ],
+       "fg": [
+        255,
+        255,
+        255
+       ]
+      }
+     },
+     "x": 330,
+     "y": 1180,
+     "at": 1,
+     "anim": "pop",
+     "delay": 0.3
+    }
+   ],
+   "until": 2,
+   "kind": "hook",
+   "seed": 3
+  },
+  {
+   "place": "office",
+   "dim": 0.0,
+   "els": [
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "A TYPICAL AGENCY"
+      ],
+      "kw": {
+       "size": 40
+      }
+     },
+     "x": 540.0,
+     "y": 300,
+     "at": 2,
+     "anim": "pop",
+     "delay": 0
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "person",
+      "args": [
+       "staff",
+       "stress",
+       1
+      ],
+      "kw": {
+       "scale": 1.3
+      }
+     },
+     "x": 280,
+     "y": 981.0,
+     "at": 2,
+     "anim": "rise",
+     "delay": 0,
+     "float": 0
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "bubble",
+      "args": [
+       [
+        "Client: Where is",
+        "my reel? It was",
+        "due on Monday!"
+       ]
+      ],
+      "kw": {
+       "w": 700,
+       "tail": "left"
+      }
+     },
+     "x": 640,
+     "y": 700,
+     "at": 2,
+     "anim": "pop",
+     "delay": 0.35
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "bubble",
+      "args": [
+       [
+        "Let me check",
+        "with the team..."
+       ]
+      ],
+      "kw": {
+       "w": 640,
+       "tail": "right",
+       "bg": [
+        201,
+        162,
+        39
+       ]
+      }
+     },
+     "x": 520,
+     "y": 1020,
+     "at": 3,
+     "anim": "pop",
+     "delay": 0.2
+    }
+   ],
+   "until": 5,
+   "kind": "story",
+   "seed": 4
+  },
+  {
+   "place": "office",
+   "dim": 0.6,
+   "els": [
+    {
+     "type": "head",
+     "lines": [
+      "4 SIGNS"
+     ],
+     "hl": [],
+     "size": 84,
+     "x": 540.0,
+     "y": 290,
+     "at": 5,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "card",
+      "args": [
+       null,
+       [
+        "Deadlines in heads"
+       ]
+      ],
+      "kw": {
+       "w": 800,
+       "size": 52,
+       "accent": [
+        46,
+        196,
+        182
+       ],
+       "dark": true
+      }
+     },
+     "x": 600.0,
+     "y": 600,
+     "at": 5,
+     "anim": "left",
+     "delay": 0.15
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "icon",
+      "args": [
+       "clock"
+      ],
+      "kw": {
+       "size": 130,
+       "bg": [
+        46,
+        196,
+        182
+       ]
+      }
+     },
+     "x": 150,
+     "y": 600,
+     "at": 5,
+     "anim": "pop",
+     "delay": 0.05
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "card",
+      "args": [
+       null,
+       [
+        "Clients chase updates"
+       ]
+      ],
+      "kw": {
+       "w": 800,
+       "size": 52,
+       "accent": [
+        46,
+        196,
+        182
+       ],
+       "dark": true
+      }
+     },
+     "x": 600.0,
+     "y": 800,
+     "at": 6,
+     "anim": "left",
+     "delay": 0.15
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "icon",
+      "args": [
+       "whatsapp"
+      ],
+      "kw": {
+       "size": 130,
+       "bg": [
+        46,
+        196,
+        182
+       ]
+      }
+     },
+     "x": 150,
+     "y": 800,
+     "at": 6,
+     "anim": "pop",
+     "delay": 0.05
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "card",
+      "args": [
+       null,
+       [
+        "Who is overloaded?"
+       ]
+      ],
+      "kw": {
+       "w": 800,
+       "size": 52,
+       "accent": [
+        46,
+        196,
+        182
+       ],
+       "dark": true
+      }
+     },
+     "x": 600.0,
+     "y": 1000,
+     "at": 7,
+     "anim": "left",
+     "delay": 0.15
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "icon",
+      "args": [
+       "user"
+      ],
+      "kw": {
+       "size": 130,
+       "bg": [
+        46,
+        196,
+        182
+       ]
+      }
+     },
+     "x": 150,
+     "y": 1000,
+     "at": 7,
+     "anim": "pop",
+     "delay": 0.05
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "card",
+      "args": [
+       null,
+       [
+        "Late work found late"
+       ]
+      ],
+      "kw": {
+       "w": 800,
+       "size": 52,
+       "accent": [
+        201,
+        162,
+        39
+       ],
+       "dark": false
+      }
+     },
+     "x": 600.0,
+     "y": 1200,
+     "at": 8,
+     "anim": "left",
+     "delay": 0.15
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "icon",
+      "args": [
+       "bell"
+      ],
+      "kw": {
+       "size": 130,
+       "bg": [
+        201,
+        162,
+        39
+       ]
+      }
+     },
+     "x": 150,
+     "y": 1200,
+     "at": 8,
+     "anim": "pop",
+     "delay": 0.05
+    }
+   ],
+   "until": 9,
+   "kind": "steps",
+   "seed": 5
+  },
+  {
+   "place": "office",
+   "dim": 0.7,
+   "els": [
+    {
+     "type": "head",
+     "lines": [
+      "Late work,",
+      "seen first"
+     ],
+     "hl": [
+      "seen",
+      "first"
+     ],
+     "size": 80,
+     "x": 540.0,
+     "y": 230,
+     "at": 9,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "phone",
+      "args": [
+       "assets/shots/hub-home-m.webp"
+      ],
+      "kw": {
+       "w": 460
+      }
+     },
+     "x": 540.0,
+     "y": 850,
+     "at": 9,
+     "anim": "rise",
+     "delay": 0.1
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "Overdue work and workload, live"
+      ],
+      "kw": {
+       "size": 46
+      }
+     },
+     "x": 540.0,
+     "y": 1315,
+     "at": 10,
+     "anim": "pop",
+     "delay": 0.2
+    }
+   ],
+   "until": 11,
+   "kind": "screen",
+   "seed": 6
+  },
+  {
+   "place": "city",
+   "dim": 0.55,
+   "no_caps": true,
+   "els": [
+    {
+     "type": "img",
+     "make": {
+      "fn": "logo",
+      "args": [],
+      "kw": {
+       "size": 190
+      }
+     },
+     "x": 540.0,
+     "y": 420,
+     "at": 11,
+     "anim": "pop",
+     "delay": 0
+    },
+    {
+     "type": "head",
+     "lines": [
+      "See it before",
+      "the client does."
+     ],
+     "hl": [
+      "the",
+      "client",
+      "does."
+     ],
+     "size": 90,
+     "x": 540.0,
+     "y": 600,
+     "at": 11,
+     "delay": 0.2,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "Try a live demo: resolveai.cc"
+      ],
+      "kw": {
+       "size": 46
+      }
+     },
+     "x": 540.0,
+     "y": 1000,
+     "at": 11,
+     "anim": "pop",
+     "delay": 0.6
+    },
+    {
+     "type": "head",
+     "lines": [
+      "Follow for more"
+     ],
+     "hl": [],
+     "size": 56,
+     "x": 540.0,
+     "y": 1120,
+     "at": 12,
+     "delay": 0.3,
+     "align": "center",
+     "color": "white"
+    }
+   ],
+   "until": "end",
+   "kind": "ending",
+   "seed": 7
+  }
+ ],
+ "cover": {
+  "kicker": "4 SIGNS",
+  "big": [
+   "AGENCY ON",
+   "WHATSAPP?"
+  ],
+  "sub": "#4 costs the most",
+  "place": "office",
+  "person": [
+   "owner",
+   "phone",
+   2
+  ]
+ },
+ "sources": [
+  {
+   "fact": "ResolveAI Agency Hub page: 'Deliverables with owners, due dates and status'; 'Overdue and due-this-week views for the whole team'; home screen shows 'retainers, pipeline, overdue work and each person's workload'; 'The demo opens a working copy with sample data. View only, no sign-up.' (page text read from the live site's source on this date)",
+   "url": "https://www.resolveai.cc/agency-management-software",
+   "fetched": "2026-11-21"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-21T20:30:00+05:30",
+  "instagram_caption": "4 signs your agency has outgrown WhatsApp groups. Number 4 costs the most.\n\nPicture a typical agency: deadlines live in one person's head, clients chase updates on WhatsApp, nobody can say who is overloaded, and late work shows up only when the client complains. This is a typical example, not a real client.\n\nPut every deliverable in one place, with an owner, a due date and a status, so overdue work shows up before the client sees it.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: ResolveAI Agency Hub product page.\n\nWhich of these 4 signs shows up most in your agency?\n\n#resolveai #agencylife #digitalagency #projectmanagement #agencyowner",
+  "youtube_title": "4 Signs Your Agency Has Outgrown WhatsApp Groups",
+  "youtube_description": "Four signs a typical agency has outgrown WhatsApp groups: deadlines in one person's head, clients chasing updates, nobody knowing who is overloaded, and late work found only when the client complains. Agency Hub puts every deliverable in one place with an owner, a due date and a status, plus overdue work and each person's workload. This is a typical example, not a real client.\n\nTry a live demo with sample data at https://www.resolveai.cc (no sign-up).\n\nSources:\n• ResolveAI, \"Agency Management Software: Leads, Clients & Deliverables\" (fetched Nov 21, 2026)\n\nResolveAI: ERP software and AI automation for established businesses. Instagram: @resolveai.software\n\n#Shorts #ResolveAI #AgencyLife"
+ },
+ "math": [
+  {
+   "expr": "sum([1, 1, 1, 1])",
+   "expect": "4",
+   "note": "four signs listed in the Reel (deadlines in heads, clients chase updates, who is overloaded, late work found late); #4 is the last one"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "id": "007_agency_signs",
+ "series": "4 SIGNS",
+ "speed": 1.15,
+ "beats": [
+  {"say": "Four signs your agency has outgrown WhatsApp groups.",
+   "show": {"kind": "hook", "place": "office", "kicker": "4 SIGNS", "lines": ["Agency run", "on WhatsApp?"], "hl": ["WhatsApp?"], "person": ["owner", "phone", 2], "badge": "#4 COSTS THE MOST"}},
+  {"say": "And number four costs the most.", "cap": "And #4 costs the most."},
+  {"say": "Picture a typical agency on a Friday evening.",
+   "show": {"kind": "story", "place": "office", "sub": "A TYPICAL AGENCY", "person": ["staff", "stress", 1], "bubble": ["Client: Where is", "my reel? It was", "due on Monday!"], "reply": ["Let me check", "with the team..."]}},
+  {"say": "A client asks where their reel is.", "pause": 0.2},
+  {"say": "And nobody on the team knows.", "pause": 0.5},
+  {"say": "Sign one. Deadlines live in one person's head.",
+   "show": {"kind": "steps", "title": "4 SIGNS", "hl": 3, "steps": [["clock", "Deadlines in heads"], ["whatsapp", "Clients chase updates"], ["user", "Who is overloaded?"], ["bell", "Late work found late"]], "place": "office"}},
+  {"say": "Sign two. Clients chase you for updates on WhatsApp."},
+  {"say": "Sign three. Nobody can say who is overloaded this week."},
+  {"say": "And sign four. You find late work only when the client complains.", "pause": 0.5},
+  {"say": "Agency Hub puts every deliverable in one place.",
+   "show": {"kind": "screen", "shot": "hub-home", "device": "phone", "title": ["Late work,", "seen first"], "hl": ["seen", "first"], "callout": "Overdue work and workload, live"}},
+  {"say": "Owner, due date and status, plus overdue work and each person's workload.", "pause": 0.5},
+  {"say": "Try a live demo at resolve A I dot C C.", "cap": "Try a live demo at resolveai.cc",
+   "show": {"kind": "ending", "lines": ["See it before", "the client does."], "hl": ["the", "client", "does."]}},
+  {"say": "Follow for more."}
+ ],
+ "cover": {"kicker": "4 SIGNS", "big": ["AGENCY ON", "WHATSAPP?"], "sub": "#4 costs the most", "place": "office", "person": ["owner", "phone", 2]},
+ "sources": [
+  {"fact": "ResolveAI Agency Hub page: 'Deliverables with owners, due dates and status'; 'Overdue and due-this-week views for the whole team'; home screen shows 'retainers, pipeline, overdue work and each person's workload'; 'The demo opens a working copy with sample data. View only, no sign-up.' (page text read from the live site's source on this date)",
+   "url": "https://www.resolveai.cc/agency-management-software",
+   "fetched": "2026-11-21"}
+ ],
+ "math": [
+  {"expr": "sum([1, 1, 1, 1])", "expect": "4", "note": "four signs listed in the Reel (deadlines in heads, clients chase updates, who is overloaded, late work found late); #4 is the last one"}
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-21T20:30:00+05:30",
+  "instagram_caption": "4 signs your agency has outgrown WhatsApp groups. Number 4 costs the most.\n\nPicture a typical agency: deadlines live in one person's head, clients chase updates on WhatsApp, nobody can say who is overloaded, and late work shows up only when the client complains. This is a typical example, not a real client.\n\nPut every deliverable in one place, with an owner, a due date and a status, so overdue work shows up before the client sees it.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: ResolveAI Agency Hub product page.\n\nWhich of these 4 signs shows up most in your agency?\n\n#resolveai #agencylife #digitalagency #projectmanagement #agencyowner",
+  "youtube_title": "4 Signs Your Agency Has Outgrown WhatsApp Groups",
+  "youtube_description": "Four signs a typical agency has outgrown WhatsApp groups: deadlines in one person's head, clients chasing updates, nobody knowing who is overloaded, and late work found only when the client complains. Agency Hub puts every deliverable in one place with an owner, a due date and a status, plus overdue work and each person's workload. This is a typical example, not a real client.\n\nTry a live demo with sample data at https://www.resolveai.cc (no sign-up).\n\nSources:\n• ResolveAI, \"Agency Management Software: Leads, Clients & Deliverables\" (fetched Nov 21, 2026)\n\nResolveAI: ERP software and AI automation for established businesses. Instagram: @resolveai.software\n\n#Shorts #ResolveAI #AgencyLife"
+ }
+}
