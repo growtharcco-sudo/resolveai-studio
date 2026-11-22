@@ -1,0 +1,638 @@
+{
+ "id": "008_unsold_stock",
+ "series": "MONEY LEAK",
+ "voice": "am_liam",
+ "speed": 1.15,
+ "header": "MONEY LEAK",
+ "phrases": [
+  {
+   "say": "How much of your money is sitting on a shelf?",
+   "cap": "How much of your money is sitting on a shelf?",
+   "pause": 0.18
+  },
+  {
+   "say": "Picture a typical factory. The godown is full, but cash is tight.",
+   "cap": "Picture a typical factory. The godown is full, but cash is tight.",
+   "pause": 0.35
+  },
+  {
+   "say": "The R B I surveys Indian manufacturers every quarter.",
+   "cap": "The RBI surveys Indian manufacturers every quarter.",
+   "pause": 0.18
+  },
+  {
+   "say": "Finished goods stock was twenty three point nine per cent of sales.",
+   "cap": "Finished goods stock was 23.9% of sales.",
+   "pause": 0.18
+  },
+  {
+   "say": "That was April to June twenty twenty six, up from twenty one per cent.",
+   "cap": "That was April to June 2026, up from 21%.",
+   "pause": 0.5
+  },
+  {
+   "say": "Every unsold box is cash you already spent.",
+   "cap": "Every unsold box is cash you already spent.",
+   "pause": 0.18
+  },
+  {
+   "say": "Raw material, labour and power, all locked inside it.",
+   "cap": "Raw material, labour and power, all locked inside it.",
+   "pause": 0.5
+  },
+  {
+   "say": "First, see what you hold in every warehouse.",
+   "cap": "First, see what you hold in every warehouse.",
+   "pause": 0.18
+  },
+  {
+   "say": "Then see the value of every item, in rupees.",
+   "cap": "Then see the value of every item, in rupees.",
+   "pause": 0.18
+  },
+  {
+   "say": "Filter what is below reorder level, and buy only that.",
+   "cap": "Filter what is below reorder level, and buy only that.",
+   "pause": 0.5
+  },
+  {
+   "say": "One inventory screen shows your total stock value.",
+   "cap": "One inventory screen shows your total stock value.",
+   "pause": 0.18
+  },
+  {
+   "say": "Sort by value, and see where your money sits.",
+   "cap": "Sort by value, and see where your money sits.",
+   "pause": 0.5
+  },
+  {
+   "say": "Try a live demo at resolve A I dot C C.",
+   "cap": "Try a live demo at resolveai.cc",
+   "pause": 0.18
+  },
+  {
+   "say": "Follow for more.",
+   "cap": "Follow for more.",
+   "pause": 0.35
+  }
+ ],
+ "scenes": [
+  {
+   "place": "factory",
+   "dim": 0.15,
+   "els": [
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "MONEY LEAK"
+      ],
+      "kw": {
+       "size": 42
+      }
+     },
+     "x": 540.0,
+     "y": 300,
+     "at": -1,
+     "anim": "pop",
+     "delay": 0
+    },
+    {
+     "type": "head",
+     "lines": [
+      "Money sitting",
+      "on your shelf?"
+     ],
+     "hl": [
+      "shelf?"
+     ],
+     "size": 104,
+     "x": 540.0,
+     "y": 370,
+     "at": -1,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "person",
+      "args": [
+       "owner",
+       "stress",
+       1
+      ],
+      "kw": {
+       "scale": 1.3
+      }
+     },
+     "x": 760,
+     "y": 981.0,
+     "at": -1,
+     "anim": "rise",
+     "delay": 0,
+     "float": 0
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "UNSOLD STOCK"
+      ],
+      "kw": {
+       "size": 50,
+       "bg": [
+        228,
+        87,
+        46
+       ],
+       "fg": [
+        255,
+        255,
+        255
+       ]
+      }
+     },
+     "x": 330,
+     "y": 1180,
+     "at": 1,
+     "anim": "pop",
+     "delay": 0.3
+    }
+   ],
+   "until": 2,
+   "kind": "hook",
+   "seed": 3
+  },
+  {
+   "place": "city",
+   "dim": 0.62,
+   "els": [
+    {
+     "type": "head",
+     "lines": [
+      "Finished goods"
+     ],
+     "hl": [],
+     "size": 76,
+     "x": 540.0,
+     "y": 470,
+     "at": 2,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "count",
+     "to": 23.9,
+     "prefix": "",
+     "suffix": "%",
+     "dec": 1,
+     "indian": false,
+     "size": 210,
+     "x": 540.0,
+     "y": 700,
+     "color": "gold",
+     "at": 2,
+     "delay": 0.15,
+     "dur": 1.1
+    },
+    {
+     "type": "head",
+     "lines": [
+      "of sales, Apr to Jun 2026"
+     ],
+     "hl": [],
+     "size": 60,
+     "x": 540.0,
+     "y": 1040,
+     "at": 3,
+     "delay": 0.1,
+     "align": "center",
+     "color": "white"
+    }
+   ],
+   "until": 5,
+   "kind": "number",
+   "seed": 4
+  },
+  {
+   "place": "factory",
+   "dim": 0.35,
+   "els": [
+    {
+     "type": "head",
+     "lines": [
+      "Unsold stock",
+      "is locked cash"
+     ],
+     "hl": [
+      "cash"
+     ],
+     "size": 96,
+     "x": 540.0,
+     "y": 300,
+     "at": 5,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "papers",
+     "n": 14,
+     "at": 5,
+     "delay": 0.4,
+     "y0": 820,
+     "y1": 1260
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "CASH LOCKED"
+      ],
+      "kw": {
+       "size": 56,
+       "bg": [
+        228,
+        87,
+        46
+       ],
+       "fg": [
+        255,
+        255,
+        255
+       ]
+      }
+     },
+     "x": 540.0,
+     "y": 1150,
+     "at": 6,
+     "anim": "pop",
+     "delay": 0.3
+    }
+   ],
+   "until": 7,
+   "kind": "problem",
+   "seed": 5
+  },
+  {
+   "place": "office",
+   "dim": 0.6,
+   "els": [
+    {
+     "type": "head",
+     "lines": [
+      "Find the leak"
+     ],
+     "hl": [],
+     "size": 84,
+     "x": 540.0,
+     "y": 290,
+     "at": 7,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "card",
+      "args": [
+       null,
+       [
+        "Stock by warehouse"
+       ]
+      ],
+      "kw": {
+       "w": 800,
+       "size": 52,
+       "accent": [
+        46,
+        196,
+        182
+       ],
+       "dark": true
+      }
+     },
+     "x": 600.0,
+     "y": 600,
+     "at": 7,
+     "anim": "left",
+     "delay": 0.15
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "icon",
+      "args": [
+       "box"
+      ],
+      "kw": {
+       "size": 130,
+       "bg": [
+        46,
+        196,
+        182
+       ]
+      }
+     },
+     "x": 150,
+     "y": 600,
+     "at": 7,
+     "anim": "pop",
+     "delay": 0.05
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "card",
+      "args": [
+       null,
+       [
+        "Value of every item"
+       ]
+      ],
+      "kw": {
+       "w": 800,
+       "size": 52,
+       "accent": [
+        201,
+        162,
+        39
+       ],
+       "dark": false
+      }
+     },
+     "x": 600.0,
+     "y": 800,
+     "at": 8,
+     "anim": "left",
+     "delay": 0.15
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "icon",
+      "args": [
+       "rupee"
+      ],
+      "kw": {
+       "size": 130,
+       "bg": [
+        201,
+        162,
+        39
+       ]
+      }
+     },
+     "x": 150,
+     "y": 800,
+     "at": 8,
+     "anim": "pop",
+     "delay": 0.05
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "card",
+      "args": [
+       null,
+       [
+        "Below reorder level"
+       ]
+      ],
+      "kw": {
+       "w": 800,
+       "size": 52,
+       "accent": [
+        46,
+        196,
+        182
+       ],
+       "dark": true
+      }
+     },
+     "x": 600.0,
+     "y": 1000,
+     "at": 9,
+     "anim": "left",
+     "delay": 0.15
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "icon",
+      "args": [
+       "bell"
+      ],
+      "kw": {
+       "size": 130,
+       "bg": [
+        46,
+        196,
+        182
+       ]
+      }
+     },
+     "x": 150,
+     "y": 1000,
+     "at": 9,
+     "anim": "pop",
+     "delay": 0.05
+    }
+   ],
+   "until": 10,
+   "kind": "steps",
+   "seed": 6
+  },
+  {
+   "place": "factory",
+   "dim": 0.7,
+   "els": [
+    {
+     "type": "head",
+     "lines": [
+      "Your stock,",
+      "in rupees"
+     ],
+     "hl": [
+      "rupees"
+     ],
+     "size": 80,
+     "x": 540.0,
+     "y": 230,
+     "at": 10,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "browser",
+      "args": [
+       "assets/shots/factory-inventory-1600.webp"
+      ],
+      "kw": {
+       "w": 960
+      }
+     },
+     "x": 540.0,
+     "y": 860,
+     "at": 10,
+     "anim": "rise",
+     "delay": 0.1
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "Value of every item"
+      ],
+      "kw": {
+       "size": 46
+      }
+     },
+     "x": 540.0,
+     "y": 1315,
+     "at": 11,
+     "anim": "pop",
+     "delay": 0.2
+    }
+   ],
+   "until": 12,
+   "kind": "screen",
+   "seed": 7
+  },
+  {
+   "place": "city",
+   "dim": 0.55,
+   "no_caps": true,
+   "els": [
+    {
+     "type": "img",
+     "make": {
+      "fn": "logo",
+      "args": [],
+      "kw": {
+       "size": 190
+      }
+     },
+     "x": 540.0,
+     "y": 420,
+     "at": 12,
+     "anim": "pop",
+     "delay": 0
+    },
+    {
+     "type": "head",
+     "lines": [
+      "Stock is cash.",
+      "Count it."
+     ],
+     "hl": [
+      "Count",
+      "it."
+     ],
+     "size": 90,
+     "x": 540.0,
+     "y": 600,
+     "at": 12,
+     "delay": 0.2,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "Try a live demo: resolveai.cc"
+      ],
+      "kw": {
+       "size": 46
+      }
+     },
+     "x": 540.0,
+     "y": 1000,
+     "at": 12,
+     "anim": "pop",
+     "delay": 0.6
+    },
+    {
+     "type": "head",
+     "lines": [
+      "Follow for more"
+     ],
+     "hl": [],
+     "size": 56,
+     "x": 540.0,
+     "y": 1120,
+     "at": 13,
+     "delay": 0.3,
+     "align": "center",
+     "color": "white"
+    }
+   ],
+   "until": "end",
+   "kind": "ending",
+   "seed": 8
+  }
+ ],
+ "cover": {
+  "kicker": "MONEY LEAK",
+  "big": [
+   "UNSOLD STOCK",
+   "IS LOCKED CASH"
+  ],
+  "sub": "A typical factory, and one inventory screen",
+  "place": "factory",
+  "person": [
+   "owner",
+   "point",
+   1
+  ]
+ },
+ "sources": [
+  {
+   "fact": "RBI Order Books, Inventories and Capacity Utilisation Survey for Q1:2026-27 (released Oct 7, 2026; reference period April to June 2026): finished goods inventory to sales ratio 23.9 per cent, up from 21.0 per cent in Q4:2025-26",
+   "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=24087",
+   "fetched": "2026-11-22"
+  },
+  {
+   "fact": "RBI OBICUS for Q4:2025-26 (released Aug 5, 2026): finished goods inventory to sales ratio 21.0 per cent",
+   "url": "https://www.rbi.org.in/scripts/PublicationsView.aspx?id=24075",
+   "fetched": "2026-11-22"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-22T20:30:00+05:30",
+  "instagram_caption": "How much of your money is sitting on a shelf?\n\nThe RBI's quarterly survey of Indian manufacturers found finished goods stock at 23.9% of sales in April to June 2026, up from 21% the quarter before. Every unsold box is raw material, labour and power you already paid for.\n\nSee what you hold in every warehouse, the value of every item in rupees, and what is below reorder level, so you buy only what you need.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: RBI Order Books, Inventories and Capacity Utilisation Survey (Q1 and Q4 rounds).\n\nHow often do you check the rupee value of the stock in your godown?\n\n#resolveai #inventorymanagement #manufacturing #msme #erp",
+  "youtube_title": "Unsold Stock Is Locked Cash: See It on One Screen",
+  "youtube_description": "A typical factory has a full godown and tight cash. The RBI's survey of Indian manufacturers found finished goods stock at 23.9% of sales in April to June 2026, up from 21% the quarter before. Here is how one inventory screen shows stock by warehouse, the value of every item and what is below reorder level.\n\nTry a live demo with sample data at https://www.resolveai.cc (no sign-up).\n\nSources:\n• Reserve Bank of India, \"Order Books, Inventories and Capacity Utilisation Survey on the Manufacturing sector for Q1:2026-27\" (fetched Nov 22, 2026)\n• Reserve Bank of India, \"Order Books, Inventories and Capacity Utilisation Survey on the Manufacturing sector for Q4:2025-26\" (fetched Nov 22, 2026)\n\nResolveAI: ERP software and AI automation for established businesses. Instagram: @resolveai.software\n\n#Shorts #ResolveAI #InventoryManagement"
+ },
+ "math": [
+  {
+   "expr": "23.9",
+   "expect": "23.9",
+   "note": "finished goods inventory / sales, Q1:2026-27 (RBI OBICUS, Table 3A)"
+  },
+  {
+   "expr": "round(21.0)",
+   "expect": "21",
+   "note": "finished goods inventory / sales, Q4:2025-26 (RBI OBICUS), 21.0 shown as 21%"
+  },
+  {
+   "expr": "2026",
+   "expect": "2026",
+   "note": "April to June 2026 is the survey's reference period (Q1:2026-27)"
+  }
+ ]
+}

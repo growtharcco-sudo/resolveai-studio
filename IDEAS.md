@@ -4,7 +4,7 @@ VERIFY every fact from sources fetched on the day before using one. Mark a line 
 Rotate industries and series. Examples are typical examples, never real clients.
 
 - [used 001] 4 SIGNS: your business has outgrown Excel (#4: nobody knows who owes you money). Factory.
-- MONEY LEAK: dead stock. Items sitting unsold for months and what they cost (find a sourced inventory carrying cost range). Distributor.
+- [used 008] MONEY LEAK: dead stock / unsold finished goods (RBI OBICUS finished goods to sales ratio), factory version. Items sitting unsold for months and what they cost (find a sourced inventory carrying cost range). Distributor.
 - ONE SCREEN: the reorder alert. "Items below reorder level" on the factory demo dashboard. Factory.
 - [used 004] BEFORE / AFTER: a school office on fee day, paper receipts vs the fees screen. School.
 - [used P003] QUICK FACT: India's MSME count and their share of exports (msme.gov.in / PIB). What it means for owners.

@@ -1,0 +1,194 @@
+{
+ "id": "008_unsold_stock",
+ "series": "MONEY LEAK",
+ "speed": 1.15,
+ "beats": [
+  {
+   "say": "How much of your money is sitting on a shelf?",
+   "show": {
+    "kind": "hook",
+    "place": "factory",
+    "kicker": "MONEY LEAK",
+    "lines": [
+     "Money sitting",
+     "on your shelf?"
+    ],
+    "hl": [
+     "shelf?"
+    ],
+    "person": [
+     "owner",
+     "stress",
+     1
+    ],
+    "badge": "UNSOLD STOCK"
+   }
+  },
+  {
+   "say": "Picture a typical factory. The godown is full, but cash is tight.",
+   "pause": 0.35
+  },
+  {
+   "say": "The R B I surveys Indian manufacturers every quarter.",
+   "cap": "The RBI surveys Indian manufacturers every quarter.",
+   "show": {
+    "kind": "number",
+    "to": 23.9,
+    "dec": 1,
+    "suffix": "%",
+    "label": "Finished goods",
+    "sub": "of sales, Apr to Jun 2026",
+    "color": "gold",
+    "place": "city"
+   }
+  },
+  {
+   "say": "Finished goods stock was twenty three point nine per cent of sales.",
+   "cap": "Finished goods stock was 23.9% of sales."
+  },
+  {
+   "say": "That was April to June twenty twenty six, up from twenty one per cent.",
+   "cap": "That was April to June 2026, up from 21%.",
+   "pause": 0.5
+  },
+  {
+   "say": "Every unsold box is cash you already spent.",
+   "show": {
+    "kind": "problem",
+    "place": "factory",
+    "lines": [
+     "Unsold stock",
+     "is locked cash"
+    ],
+    "hl": [
+     "cash"
+    ],
+    "papers": true,
+    "badge": "CASH LOCKED"
+   }
+  },
+  {
+   "say": "Raw material, labour and power, all locked inside it.",
+   "pause": 0.5
+  },
+  {
+   "say": "First, see what you hold in every warehouse.",
+   "show": {
+    "kind": "steps",
+    "title": "Find the leak",
+    "steps": [
+     [
+      "box",
+      "Stock by warehouse"
+     ],
+     [
+      "rupee",
+      "Value of every item"
+     ],
+     [
+      "bell",
+      "Below reorder level"
+     ]
+    ],
+    "hl": 1,
+    "place": "office"
+   }
+  },
+  {
+   "say": "Then see the value of every item, in rupees."
+  },
+  {
+   "say": "Filter what is below reorder level, and buy only that.",
+   "pause": 0.5
+  },
+  {
+   "say": "One inventory screen shows your total stock value.",
+   "show": {
+    "kind": "screen",
+    "shot": "factory-inventory",
+    "device": "browser",
+    "title": [
+     "Your stock,",
+     "in rupees"
+    ],
+    "hl": [
+     "rupees"
+    ],
+    "callout": "Value of every item",
+    "place": "factory"
+   }
+  },
+  {
+   "say": "Sort by value, and see where your money sits.",
+   "pause": 0.5
+  },
+  {
+   "say": "Try a live demo at resolve A I dot C C.",
+   "cap": "Try a live demo at resolveai.cc",
+   "show": {
+    "kind": "ending",
+    "lines": [
+     "Stock is cash.",
+     "Count it."
+    ],
+    "hl": [
+     "Count",
+     "it."
+    ]
+   }
+  },
+  {
+   "say": "Follow for more."
+  }
+ ],
+ "cover": {
+  "kicker": "MONEY LEAK",
+  "big": [
+   "UNSOLD STOCK",
+   "IS LOCKED CASH"
+  ],
+  "sub": "A typical factory, and one inventory screen",
+  "place": "factory",
+  "person": [
+   "owner",
+   "point",
+   1
+  ]
+ },
+ "sources": [
+  {
+   "fact": "RBI Order Books, Inventories and Capacity Utilisation Survey for Q1:2026-27 (released Oct 7, 2026; reference period April to June 2026): finished goods inventory to sales ratio 23.9 per cent, up from 21.0 per cent in Q4:2025-26",
+   "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=24087",
+   "fetched": "2026-11-22"
+  },
+  {
+   "fact": "RBI OBICUS for Q4:2025-26 (released Aug 5, 2026): finished goods inventory to sales ratio 21.0 per cent",
+   "url": "https://www.rbi.org.in/scripts/PublicationsView.aspx?id=24075",
+   "fetched": "2026-11-22"
+  }
+ ],
+ "math": [
+  {
+   "expr": "23.9",
+   "expect": "23.9",
+   "note": "finished goods inventory / sales, Q1:2026-27 (RBI OBICUS, Table 3A)"
+  },
+  {
+   "expr": "round(21.0)",
+   "expect": "21",
+   "note": "finished goods inventory / sales, Q4:2025-26 (RBI OBICUS), 21.0 shown as 21%"
+  },
+  {
+   "expr": "2026",
+   "expect": "2026",
+   "note": "April to June 2026 is the survey's reference period (Q1:2026-27)"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-22T20:30:00+05:30",
+  "instagram_caption": "How much of your money is sitting on a shelf?\n\nThe RBI's quarterly survey of Indian manufacturers found finished goods stock at 23.9% of sales in April to June 2026, up from 21% the quarter before. Every unsold box is raw material, labour and power you already paid for.\n\nSee what you hold in every warehouse, the value of every item in rupees, and what is below reorder level, so you buy only what you need.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: RBI Order Books, Inventories and Capacity Utilisation Survey (Q1 and Q4 rounds).\n\nHow often do you check the rupee value of the stock in your godown?\n\n#resolveai #inventorymanagement #manufacturing #msme #erp",
+  "youtube_title": "Unsold Stock Is Locked Cash: See It on One Screen",
+  "youtube_description": "A typical factory has a full godown and tight cash. The RBI's survey of Indian manufacturers found finished goods stock at 23.9% of sales in April to June 2026, up from 21% the quarter before. Here is how one inventory screen shows stock by warehouse, the value of every item and what is below reorder level.\n\nTry a live demo with sample data at https://www.resolveai.cc (no sign-up).\n\nSources:\n• Reserve Bank of India, \"Order Books, Inventories and Capacity Utilisation Survey on the Manufacturing sector for Q1:2026-27\" (fetched Nov 22, 2026)\n• Reserve Bank of India, \"Order Books, Inventories and Capacity Utilisation Survey on the Manufacturing sector for Q4:2025-26\" (fetched Nov 22, 2026)\n\nResolveAI: ERP software and AI automation for established businesses. Instagram: @resolveai.software\n\n#Shorts #ResolveAI #InventoryManagement"
+ }
+}
