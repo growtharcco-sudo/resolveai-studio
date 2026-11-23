@@ -1,0 +1,167 @@
+{
+ "id": "009_school_attendance",
+ "series": "ONE SCREEN",
+ "speed": 1.15,
+ "beats": [
+  {
+   "say": "A typical school at nine in the morning. Who is absent today?",
+   "cap": "A typical school at 9 in the morning. Who is absent today?",
+   "show": {
+    "kind": "hook",
+    "place": "school",
+    "kicker": "ONE SCREEN",
+    "lines": [
+     "Who is absent",
+     "today?"
+    ],
+    "hl": [
+     "today?"
+    ],
+    "person": [
+     "teacher",
+     "stress",
+     1
+    ],
+    "badge": "PAPER REGISTER"
+   }
+  },
+  {
+   "say": "Every class has a paper register. Someone adds it up later.",
+   "pause": 0.35
+  },
+  {
+   "say": "India's schools have over twenty four point seven two crore students.",
+   "cap": "India's schools have over 24.72 crore students.",
+   "show": {
+    "kind": "number",
+    "to": 24.72,
+    "dec": 2,
+    "label": "Over",
+    "sub": "crore students in school",
+    "color": "gold",
+    "place": "school"
+   }
+  },
+  {
+   "say": "That is the Education Ministry's U DISE plus count.",
+   "cap": "That is the Education Ministry's UDISE+ count."
+  },
+  {
+   "say": "Every one needs a mark, every school day.",
+   "pause": 0.5
+  },
+  {
+   "say": "Pick the class and the date.",
+   "show": {
+    "kind": "steps",
+    "title": "One attendance screen",
+    "steps": [
+     [
+      "user",
+      "Class and date"
+     ],
+     [
+      "check",
+      "Present, absent, leave"
+     ],
+     [
+      "chart",
+      "Monthly register"
+     ]
+    ],
+    "hl": 1,
+    "place": "school"
+   }
+  },
+  {
+   "say": "Tap present, absent or leave for each student."
+  },
+  {
+   "say": "The monthly register is ready on its own tab.",
+   "pause": 0.5
+  },
+  {
+   "say": "The day's totals sit at the top, present and absent.",
+   "show": {
+    "kind": "screen",
+    "shot": "school-attendance",
+    "device": "browser",
+    "title": [
+     "Every class,",
+     "one screen"
+    ],
+    "hl": [
+     "screen"
+    ],
+    "callout": "Totals at the top",
+    "place": "school"
+   }
+  },
+  {
+   "say": "No counting pages at the end of the month.",
+   "pause": 0.5
+  },
+  {
+   "say": "Try a live demo at resolve A I dot C C.",
+   "cap": "Try a live demo at resolveai.cc",
+   "show": {
+    "kind": "ending",
+    "lines": [
+     "Who is absent?",
+     "Now you know."
+    ],
+    "hl": [
+     "know."
+    ]
+   }
+  },
+  {
+   "say": "Follow for more."
+  }
+ ],
+ "cover": {
+  "kicker": "ONE SCREEN",
+  "big": [
+   "WHO IS ABSENT?",
+   "ONE SCREEN."
+  ],
+  "sub": "A typical school, attendance by class",
+  "place": "school",
+  "person": [
+   "teacher",
+   "happy",
+   1
+  ]
+ },
+ "sources": [
+  {
+   "fact": "PIB document 'Beyond the Numbers: Decoding India's School Education Progress', UDISE+ 2025-26 report (Ministry of Education), Aug 17, 2026: over 24.72 crore enrolled students",
+   "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/aug/doc2026817960201.pdf",
+   "fetched": "2026-11-23"
+  },
+  {
+   "fact": "Free Press Journal (Aug 17, 2026): UDISE+ 2025-26, more than 24.72 crore students enrolled in schools during 2025-26",
+   "url": "https://www.freepressjournal.in/education/udise-2025-26-2472-crore-students-103-crore-teachers-1-in-3-schools-still-without-internet",
+   "fetched": "2026-11-23"
+  }
+ ],
+ "math": [
+  {
+   "expr": "24.72",
+   "expect": "24.72",
+   "note": "over 24.72 crore enrolled students, UDISE+ 2025-26 (PIB, Free Press Journal)"
+  },
+  {
+   "expr": "9",
+   "expect": "9",
+   "note": "9 in the morning: the typical example's time, not a statistic"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-23T20:30:00+05:30",
+  "instagram_caption": "Who is absent today in your school?\n\nIndia's schools have over 24.72 crore students, says the Education Ministry's UDISE+ 2025-26 report. Every one needs a mark every school day, and in a typical school that still means a paper register per class that someone adds up later.\n\nPick the class and the date, tap present, absent or leave for each student, and see the day's totals and the monthly register on one attendance screen.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: PIB, Free Press Journal (UDISE+ 2025-26).\n\nHow does your school take attendance today?\n\n#resolveai #schoolmanagement #schoolerp #attendance #edtech",
+  "youtube_title": "Who Is Absent Today? One Screen for School Attendance",
+  "youtube_description": "In a typical school, every class has a paper register that someone adds up later. India's schools have over 24.72 crore students, says the Education Ministry's UDISE+ 2025-26 report. Here is one attendance screen: pick the class and date, mark present, absent or leave, and see the day's totals and the monthly register.\n\nTry a live demo with sample data at https://www.resolveai.cc (no sign-up).\n\nSources:\n• PIB, \"Beyond the Numbers: Decoding India's School Education Progress\" (fetched Nov 23, 2026)\n• Free Press Journal, \"UDISE+ 2025-26: 24.72 Crore Students, 1.03 Crore Teachers; 1 In 3 Schools Still Without Internet\" (fetched Nov 23, 2026)\n\nResolveAI: ERP software and AI automation for established businesses. Instagram: @resolveai.software\n\n#Shorts #ResolveAI #SchoolManagement"
+ }
+}

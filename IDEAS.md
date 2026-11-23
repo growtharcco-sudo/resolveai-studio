@@ -14,7 +14,7 @@ Rotate industries and series. Examples are typical examples, never real clients.
 - [used 003] QUICK FACT: GST e-invoicing threshold for businesses (cbic.gov.in / gst.gov.in, check the current limit). Distributor.
 - BEFORE / AFTER: month end closing, 3 days of spreadsheets vs a live dashboard. Factory.
 - [used 007] N SIGNS: your agency needs a project tracker (deadlines in heads, clients chasing updates). Agency.
-- ONE SCREEN: attendance in one tap on the school demo. School.
+- [used 009] ONE SCREEN: attendance in one tap on the school demo. School.
 - MONEY LEAK: production wastage nobody records. Factory.
 - [used 006] QUICK FACT: how many businesses use AI (find a sourced survey, India or global). Office.
 - N STEPS: 4 steps to move from Excel to a system without stopping work. Any.
