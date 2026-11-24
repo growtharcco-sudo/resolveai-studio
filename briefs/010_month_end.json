@@ -1,0 +1,172 @@
+{
+ "id": "010_month_end",
+ "series": "BEFORE / AFTER",
+ "speed": 1.15,
+ "beats": [
+  {
+   "say": "Month end at a typical factory. Sound familiar?",
+   "show": {
+    "kind": "hook",
+    "place": "factory",
+    "kicker": "BEFORE / AFTER",
+    "lines": [
+     "Month end.",
+     "Sound familiar?"
+    ],
+    "hl": [
+     "familiar?"
+    ],
+    "person": [
+     "clerk",
+     "stress",
+     1
+    ],
+    "badge": "SPREADSHEETS"
+   }
+  },
+  {
+   "say": "Sales in one sheet, stock in another, dues in a notebook.",
+   "pause": 0.35
+  },
+  {
+   "say": "Gartner surveyed four hundred ninety seven accounting staff.",
+   "cap": "Gartner surveyed 497 accounting staff.",
+   "show": {
+    "kind": "number",
+    "to": 59,
+    "suffix": "%",
+    "label": "Errors every month",
+    "sub": "of 497 accountants",
+    "color": "gold",
+    "place": "factory"
+   }
+  },
+  {
+   "say": "Fifty nine percent make several errors every month.",
+   "cap": "59% make several errors every month.",
+   "pause": 0.5
+  },
+  {
+   "say": "Gartner linked those errors to too much work."
+  },
+  {
+   "say": "Before: copy sales from sheets, count stock again, chase dues by phone.",
+   "show": {
+    "kind": "compare",
+    "place": "factory",
+    "before": {
+     "title": "BY HAND",
+     "lines": [
+      "Copy sales from sheets",
+      "Count stock again",
+      "Chase dues by phone"
+     ]
+    },
+    "after": {
+     "title": "ON ONE SYSTEM",
+     "lines": [
+      "Sales already invoiced",
+      "Stock value, live",
+      "Dues in one list"
+     ]
+    }
+   }
+  },
+  {
+   "say": "After: every invoice, payment and stock move is already in one system."
+  },
+  {
+   "say": "One dashboard shows stock value, money to collect and money to pay.",
+   "show": {
+    "kind": "screen",
+    "shot": "factory-home",
+    "device": "browser",
+    "title": [
+     "Month end,",
+     "on one screen"
+    ],
+    "hl": [
+     "one"
+    ],
+    "callout": "This month's sales and payments",
+    "place": "factory"
+   }
+  },
+  {
+   "say": "Plus this month's sales and payments received.",
+   "pause": 0.5
+  },
+  {
+   "say": "Try a live demo at resolve A I dot C C.",
+   "cap": "Try a live demo at resolveai.cc",
+   "show": {
+    "kind": "ending",
+    "lines": [
+     "Month end,",
+     "minus the mess."
+    ],
+    "hl": [
+     "mess."
+    ]
+   }
+  },
+  {
+   "say": "Follow for more."
+  }
+ ],
+ "cover": {
+  "kicker": "BEFORE / AFTER",
+  "big": [
+   "MONTH END.",
+   "NO MESS."
+  ],
+  "sub": "A typical factory, on one system",
+  "place": "factory",
+  "person": [
+   "owner",
+   "happy",
+   1
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Gartner press release, Feb 21, 2024: survey of 497 individuals in the controllership function (July 2023); 18% of accountants make financial errors at least daily, over half (59%) make several errors per month; errors closely linked to concerns about low capacity",
+   "url": "https://gartner.com/en/newsroom/press-releases/2024-02-21-gartner-survey-shows-that-a-third-of-accountants-make-several-error-per-weeo-due-to-capacity-constraints",
+   "fetched": "2026-11-24"
+  },
+  {
+   "fact": "CFO Dive, Feb 21, 2024: nearly three out of five accountants (59%) make several errors every month, survey of 497 accountants incl. India; accountants with excessive workloads tend to err through manual mistakes",
+   "url": "https://www.cfodive.com/news/half-accountants-make-errors-each-month-gartner-accounting-audit-auditing-PCAOB/708138/",
+   "fetched": "2026-11-24"
+  }
+ ],
+ "math": [
+  {
+   "expr": "497",
+   "expect": "497",
+   "note": "people surveyed in the controllership function, July 2023 (Gartner press release)"
+  },
+  {
+   "expr": "59",
+   "expect": "59",
+   "note": "percent of accountants making several errors per month (Gartner, CFO Dive)"
+  },
+  {
+   "expr": "int(59 > 50)",
+   "expect": "1",
+   "note": "59% is more than half"
+  },
+  {
+   "expr": "round(497*0.59)",
+   "expect": "293",
+   "note": "about 293 of the 497 respondents"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-24T20:30:00+05:30",
+  "instagram_caption": "Month end at a typical factory. Sound familiar?\n\nSales in one sheet, stock in another, dues in a notebook. In a Gartner survey of 497 accounting staff, 59% said they make several errors every month, and Gartner linked those errors to heavy workloads.\n\nWhen every invoice, payment and stock move is already in one system, month end becomes a check, not a rebuild. One dashboard shows stock value, money to collect, money to pay and this month's sales.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: Gartner press release (Feb 2024), CFO Dive.\n\nHow many days does month end take in your business?\n\n#resolveai #manufacturing #monthend #factoryerp #accounting",
+  "youtube_title": "Month End at a Factory: Spreadsheets vs One System",
+  "youtube_description": "Month end at a typical factory: sales in one sheet, stock in another, dues in a notebook. In a Gartner survey of 497 accounting staff, 59% said they make several errors every month. Here is the same month end on one system, with stock value, money to collect, money to pay and this month's sales on one dashboard.\n\nTry a live demo with sample data at https://www.resolveai.cc (no sign-up).\n\nSources:\n• Gartner, \"Gartner Survey Shows That a Third of Accountants Make Several Financial Errors Per Week due to Capacity Constraints\" (fetched Nov 24, 2026)\n• CFO Dive, \"More than half of accountants make several errors each month: Gartner\" (fetched Nov 24, 2026)\n\nResolveAI: ERP software and AI automation for established businesses. Instagram: @resolveai.software\n\n#Shorts #ResolveAI #Manufacturing"
+ }
+}

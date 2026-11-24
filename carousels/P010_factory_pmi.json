@@ -1,0 +1,25 @@
+{
+ "id": "P010_factory_pmi",
+ "type": "image",
+ "series": "QUICK FACT",
+ "slides": [
+  {"kind": "cover", "kicker": "QUICK FACT", "lines": ["Factory PMI", "hits 56.0,", "a 9 month high"], "hl": ["56.0,"], "place": "factory",
+   "sub": "India, Nov 2026. Above 50 = growth"}
+ ],
+ "sources": [
+  {"fact": "HSBC Flash India Manufacturing PMI rose to 56.0 in November 2026 from 54.7 in October, a nine month high; above 50 indicates expansion; total new business grew at the fastest pace since June; manufacturers added staff at the fastest rate in seven months",
+   "url": "https://www.business-standard.com/economy/news/india-flash-pmi-november-2026-manufacturing-services-private-sector-growth-126112300257_1.html", "fetched": "2026-11-24"},
+  {"fact": "Flash manufacturing PMI 56.0 in November from 54.7 in October, highest in nine months; 52.8 in August, 55.1 in September; stronger domestic demand and rising new orders",
+   "url": "https://www.businesstoday.in/latest/economy/story/manufacturing-lifts-indias-private-sector-growth-in-november-569162-2026-11-23", "fetched": "2026-11-24"}
+ ],
+ "math": [
+  {"expr": "56.0", "expect": "56.0", "note": "HSBC Flash India Manufacturing PMI, November 2026 (Business Standard, Business Today)"},
+  {"expr": "54.7", "expect": "54.7", "note": "October 2026 manufacturing PMI"},
+  {"expr": "round(56.0-54.7, 1)", "expect": "1.3", "note": "rise from October to November"},
+  {"expr": "9", "expect": "9", "note": "nine month high (Business Standard, Business Today)"}
+ ],
+ "post": {
+  "post_at": "2026-11-25T11:00:00+05:30",
+  "instagram_caption": "India's factory PMI just hit 56.0, a nine month high.\n\nThe HSBC Flash India Manufacturing PMI rose to 56.0 in November from 54.7 in October. A reading above 50 means growth. New orders grew at the fastest pace since June, and factories added staff at the fastest rate in seven months.\n\nMore orders means more to plan: raw material to buy, work orders to raise, and invoices to follow up. Check stock below reorder level and dues every week, not just at month end.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: HSBC Flash India PMI, as reported by Business Standard and Business Today (Nov 2026).\n\nAre your orders up this month too?\n\n#resolveai #manufacturing #pmi #makeinindia #msme"
+ }
+}
