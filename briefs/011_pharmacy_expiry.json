@@ -1,0 +1,194 @@
+{
+ "id": "011_pharmacy_expiry",
+ "series": "ONE SCREEN",
+ "speed": 1.15,
+ "beats": [
+  {
+   "say": "Is an expired medicine sitting on your pharmacy shelf right now?",
+   "show": {
+    "kind": "hook",
+    "place": "hospital",
+    "kicker": "ONE SCREEN",
+    "lines": [
+     "Expired stock",
+     "on your shelf?"
+    ],
+    "hl": [
+     "shelf?"
+    ],
+    "person": [
+     "staff",
+     "stress",
+     2
+    ],
+    "badge": "EXPIRY RISK"
+   }
+  },
+  {
+   "say": "Picture a typical hospital pharmacy, every shelf full of batches.",
+   "pause": 0.35
+  },
+  {
+   "say": "A Delhi survey asked a hundred pharmacists about expired medicines.",
+   "cap": "A Delhi survey asked 100 pharmacists about expired medicines.",
+   "show": {
+    "kind": "number",
+    "to": 53,
+    "suffix": "%",
+    "label": "Delhi pharmacists",
+    "sub": "said a system removed expiry",
+    "color": "gold",
+    "place": "city"
+   }
+  },
+  {
+   "say": "Only fifty three per cent said a system existed to remove them.",
+   "cap": "Only 53% said a system existed to remove them."
+  },
+  {
+   "say": "That was in the Indian Journal of Pharmacology, in twenty sixteen.",
+   "cap": "That was in the Indian Journal of Pharmacology, 2016.",
+   "pause": 0.5
+  },
+  {
+   "say": "Without a system, expiry is found by hand, or found too late.",
+   "show": {
+    "kind": "problem",
+    "place": "hospital",
+    "lines": [
+     "Expiry found",
+     "by hand"
+    ],
+    "hl": [
+     "hand"
+    ],
+    "papers": true,
+    "badge": "FOUND TOO LATE"
+   }
+  },
+  {
+   "say": "A batch expires quietly, and the money you paid goes with it.",
+   "pause": 0.5
+  },
+  {
+   "say": "First, list every batch expiring in ninety days.",
+   "cap": "First, list every batch expiring in 90 days.",
+   "show": {
+    "kind": "steps",
+    "title": "Catch it early",
+    "steps": [
+     [
+      "clock",
+      "Expiring in 90 days"
+     ],
+     [
+      "cross",
+      "Expired, not removed"
+     ],
+     [
+      "box",
+      "Oldest expiry first"
+     ]
+    ],
+    "hl": 2,
+    "place": "hospital"
+   }
+  },
+  {
+   "say": "Then flag expired stock that is still on the shelf."
+  },
+  {
+   "say": "And always use the batch that expires first.",
+   "pause": 0.5
+  },
+  {
+   "say": "One pharmacy screen shows stock and expiry for every medicine.",
+   "show": {
+    "kind": "screen",
+    "shot": "hospital-pharmacy",
+    "device": "browser",
+    "title": [
+     "Every batch,",
+     "every expiry"
+    ],
+    "hl": [
+     "expiry"
+    ],
+    "callout": "Stock by expiry",
+    "place": "hospital"
+   }
+  },
+  {
+   "say": "Open the expiry tab, and act before a batch goes to waste.",
+   "pause": 0.5
+  },
+  {
+   "say": "Try a live demo at resolve A I dot C C.",
+   "cap": "Try a live demo at resolveai.cc",
+   "show": {
+    "kind": "ending",
+    "lines": [
+     "Check expiry",
+     "every week."
+    ],
+    "hl": [
+     "every",
+     "week."
+    ]
+   }
+  },
+  {
+   "say": "Follow for more."
+  }
+ ],
+ "cover": {
+  "kicker": "ONE SCREEN",
+  "big": [
+   "EXPIRED STOCK",
+   "FOUND IN TIME"
+  ],
+  "sub": "A typical pharmacy, one expiry screen",
+  "place": "hospital",
+  "person": [
+   "doctor",
+   "point",
+   1
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Indian Journal of Pharmacology, 2016, 48(6):725-728, survey of 300 health care professionals in Delhi (100 doctors, 100 nurses, 100 pharmacists): \"Half of the pharmacists (53%) agreed that there existed a system for removing expiry medicines from the inventory.\"",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5155478",
+   "fetched": "2026-11-25"
+  }
+ ],
+ "math": [
+  {
+   "expr": "53",
+   "expect": "53",
+   "note": "share of pharmacists who agreed a system existed to remove expired medicines (Indian Journal of Pharmacology, 2016)"
+  },
+  {
+   "expr": "300 // 3",
+   "expect": "100",
+   "note": "300 professionals surveyed, 100 per group, so 100 pharmacists"
+  },
+  {
+   "expr": "2016",
+   "expect": "2016",
+   "note": "year of publication, Indian J Pharmacol 2016 Nov-Dec, 48(6)"
+  },
+  {
+   "expr": "90",
+   "expect": "90",
+   "note": "the hospital demo pharmacy flags stock expiring within 90 days"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-25T20:30:00+05:30",
+  "instagram_caption": "Is an expired medicine sitting on your pharmacy shelf right now?\n\nA survey of 100 pharmacists in Delhi, published in the Indian Journal of Pharmacology in 2016, found only 53% agreed there was a system to remove expired medicines from stock. Without one, expiry is found by hand, often too late, and the money paid for that batch is gone.\n\nList every batch expiring in the next 90 days, flag expired stock still on the shelf, and always use the batch that expires first.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: Indian Journal of Pharmacology (2016), survey of doctors, nurses and pharmacists in Delhi.\n\nHow does your pharmacy check expiry dates today?\n\n#resolveai #hospitalmanagement #pharmacy #healthcare #erp",
+  "youtube_title": "Expired Medicines on the Shelf: Catch Them on One Screen",
+  "youtube_description": "In a typical hospital pharmacy, expiry is checked by eye and found too late. A Delhi survey in the Indian Journal of Pharmacology found only 53% of 100 pharmacists agreed there was a system to remove expired medicines. Here is how one pharmacy screen shows stock and expiry for every medicine, batch by batch.\n\nTry a live demo with sample data at https://www.resolveai.cc (no sign-up).\n\nSources:\n• Indian Journal of Pharmacology, \"Comparison of the knowledge, attitude, and practices of doctors, nurses, and pharmacists regarding the use of expired and disposal of unused medicines in Delhi\" (fetched Nov 25, 2026)\n\nResolveAI: ERP software and AI automation for established businesses. Instagram: @resolveai.software\n\n#Shorts #ResolveAI #HospitalManagement"
+ }
+}

@@ -18,3 +18,4 @@ Rotate industries and series. Examples are typical examples, never real clients.
 - MONEY LEAK: production wastage nobody records. Factory.
 - [used 006] QUICK FACT: how many businesses use AI (find a sourced survey, India or global). Office.
 - N STEPS: 4 steps to move from Excel to a system without stopping work. Any.
+- [used 011] ONE SCREEN: pharmacy expiry on the hospital demo (Indian J Pharmacol 2016 survey, 53% of pharmacists). Hospital.

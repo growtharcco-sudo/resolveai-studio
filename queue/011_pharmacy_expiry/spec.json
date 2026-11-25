@@ -1,0 +1,638 @@
+{
+ "id": "011_pharmacy_expiry",
+ "series": "ONE SCREEN",
+ "voice": "am_liam",
+ "speed": 1.15,
+ "header": "ONE SCREEN",
+ "phrases": [
+  {
+   "say": "Is an expired medicine sitting on your pharmacy shelf right now?",
+   "cap": "Is an expired medicine sitting on your pharmacy shelf right now?",
+   "pause": 0.18
+  },
+  {
+   "say": "Picture a typical hospital pharmacy, every shelf full of batches.",
+   "cap": "Picture a typical hospital pharmacy, every shelf full of batches.",
+   "pause": 0.35
+  },
+  {
+   "say": "A Delhi survey asked a hundred pharmacists about expired medicines.",
+   "cap": "A Delhi survey asked 100 pharmacists about expired medicines.",
+   "pause": 0.18
+  },
+  {
+   "say": "Only fifty three per cent said a system existed to remove them.",
+   "cap": "Only 53% said a system existed to remove them.",
+   "pause": 0.18
+  },
+  {
+   "say": "That was in the Indian Journal of Pharmacology, in twenty sixteen.",
+   "cap": "That was in the Indian Journal of Pharmacology, 2016.",
+   "pause": 0.5
+  },
+  {
+   "say": "Without a system, expiry is found by hand, or found too late.",
+   "cap": "Without a system, expiry is found by hand, or found too late.",
+   "pause": 0.18
+  },
+  {
+   "say": "A batch expires quietly, and the money you paid goes with it.",
+   "cap": "A batch expires quietly, and the money you paid goes with it.",
+   "pause": 0.5
+  },
+  {
+   "say": "First, list every batch expiring in ninety days.",
+   "cap": "First, list every batch expiring in 90 days.",
+   "pause": 0.18
+  },
+  {
+   "say": "Then flag expired stock that is still on the shelf.",
+   "cap": "Then flag expired stock that is still on the shelf.",
+   "pause": 0.18
+  },
+  {
+   "say": "And always use the batch that expires first.",
+   "cap": "And always use the batch that expires first.",
+   "pause": 0.5
+  },
+  {
+   "say": "One pharmacy screen shows stock and expiry for every medicine.",
+   "cap": "One pharmacy screen shows stock and expiry for every medicine.",
+   "pause": 0.18
+  },
+  {
+   "say": "Open the expiry tab, and act before a batch goes to waste.",
+   "cap": "Open the expiry tab, and act before a batch goes to waste.",
+   "pause": 0.5
+  },
+  {
+   "say": "Try a live demo at resolve A I dot C C.",
+   "cap": "Try a live demo at resolveai.cc",
+   "pause": 0.18
+  },
+  {
+   "say": "Follow for more.",
+   "cap": "Follow for more.",
+   "pause": 0.35
+  }
+ ],
+ "scenes": [
+  {
+   "place": "hospital",
+   "dim": 0.15,
+   "els": [
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "ONE SCREEN"
+      ],
+      "kw": {
+       "size": 42
+      }
+     },
+     "x": 540.0,
+     "y": 300,
+     "at": -1,
+     "anim": "pop",
+     "delay": 0
+    },
+    {
+     "type": "head",
+     "lines": [
+      "Expired stock",
+      "on your shelf?"
+     ],
+     "hl": [
+      "shelf?"
+     ],
+     "size": 104,
+     "x": 540.0,
+     "y": 370,
+     "at": -1,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "person",
+      "args": [
+       "staff",
+       "stress",
+       2
+      ],
+      "kw": {
+       "scale": 1.3
+      }
+     },
+     "x": 760,
+     "y": 981.0,
+     "at": -1,
+     "anim": "rise",
+     "delay": 0,
+     "float": 0
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "EXPIRY RISK"
+      ],
+      "kw": {
+       "size": 50,
+       "bg": [
+        228,
+        87,
+        46
+       ],
+       "fg": [
+        255,
+        255,
+        255
+       ]
+      }
+     },
+     "x": 330,
+     "y": 1180,
+     "at": 1,
+     "anim": "pop",
+     "delay": 0.3
+    }
+   ],
+   "until": 2,
+   "kind": "hook",
+   "seed": 3
+  },
+  {
+   "place": "city",
+   "dim": 0.62,
+   "els": [
+    {
+     "type": "head",
+     "lines": [
+      "Delhi pharmacists"
+     ],
+     "hl": [],
+     "size": 76,
+     "x": 540.0,
+     "y": 470,
+     "at": 2,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "count",
+     "to": 53,
+     "prefix": "",
+     "suffix": "%",
+     "dec": 0,
+     "indian": false,
+     "size": 210,
+     "x": 540.0,
+     "y": 700,
+     "color": "gold",
+     "at": 2,
+     "delay": 0.15,
+     "dur": 1.1
+    },
+    {
+     "type": "head",
+     "lines": [
+      "said a system removed expiry"
+     ],
+     "hl": [],
+     "size": 60,
+     "x": 540.0,
+     "y": 1040,
+     "at": 3,
+     "delay": 0.1,
+     "align": "center",
+     "color": "white"
+    }
+   ],
+   "until": 5,
+   "kind": "number",
+   "seed": 4
+  },
+  {
+   "place": "hospital",
+   "dim": 0.35,
+   "els": [
+    {
+     "type": "head",
+     "lines": [
+      "Expiry found",
+      "by hand"
+     ],
+     "hl": [
+      "hand"
+     ],
+     "size": 96,
+     "x": 540.0,
+     "y": 300,
+     "at": 5,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "papers",
+     "n": 14,
+     "at": 5,
+     "delay": 0.4,
+     "y0": 820,
+     "y1": 1260
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "FOUND TOO LATE"
+      ],
+      "kw": {
+       "size": 56,
+       "bg": [
+        228,
+        87,
+        46
+       ],
+       "fg": [
+        255,
+        255,
+        255
+       ]
+      }
+     },
+     "x": 540.0,
+     "y": 1150,
+     "at": 6,
+     "anim": "pop",
+     "delay": 0.3
+    }
+   ],
+   "until": 7,
+   "kind": "problem",
+   "seed": 5
+  },
+  {
+   "place": "hospital",
+   "dim": 0.6,
+   "els": [
+    {
+     "type": "head",
+     "lines": [
+      "Catch it early"
+     ],
+     "hl": [],
+     "size": 84,
+     "x": 540.0,
+     "y": 290,
+     "at": 7,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "card",
+      "args": [
+       null,
+       [
+        "Expiring in 90 days"
+       ]
+      ],
+      "kw": {
+       "w": 800,
+       "size": 52,
+       "accent": [
+        46,
+        196,
+        182
+       ],
+       "dark": true
+      }
+     },
+     "x": 600.0,
+     "y": 600,
+     "at": 7,
+     "anim": "left",
+     "delay": 0.15
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "icon",
+      "args": [
+       "clock"
+      ],
+      "kw": {
+       "size": 130,
+       "bg": [
+        46,
+        196,
+        182
+       ]
+      }
+     },
+     "x": 150,
+     "y": 600,
+     "at": 7,
+     "anim": "pop",
+     "delay": 0.05
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "card",
+      "args": [
+       null,
+       [
+        "Expired, not removed"
+       ]
+      ],
+      "kw": {
+       "w": 800,
+       "size": 52,
+       "accent": [
+        46,
+        196,
+        182
+       ],
+       "dark": true
+      }
+     },
+     "x": 600.0,
+     "y": 800,
+     "at": 8,
+     "anim": "left",
+     "delay": 0.15
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "icon",
+      "args": [
+       "cross"
+      ],
+      "kw": {
+       "size": 130,
+       "bg": [
+        46,
+        196,
+        182
+       ]
+      }
+     },
+     "x": 150,
+     "y": 800,
+     "at": 8,
+     "anim": "pop",
+     "delay": 0.05
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "card",
+      "args": [
+       null,
+       [
+        "Oldest expiry first"
+       ]
+      ],
+      "kw": {
+       "w": 800,
+       "size": 52,
+       "accent": [
+        201,
+        162,
+        39
+       ],
+       "dark": false
+      }
+     },
+     "x": 600.0,
+     "y": 1000,
+     "at": 9,
+     "anim": "left",
+     "delay": 0.15
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "icon",
+      "args": [
+       "box"
+      ],
+      "kw": {
+       "size": 130,
+       "bg": [
+        201,
+        162,
+        39
+       ]
+      }
+     },
+     "x": 150,
+     "y": 1000,
+     "at": 9,
+     "anim": "pop",
+     "delay": 0.05
+    }
+   ],
+   "until": 10,
+   "kind": "steps",
+   "seed": 6
+  },
+  {
+   "place": "hospital",
+   "dim": 0.7,
+   "els": [
+    {
+     "type": "head",
+     "lines": [
+      "Every batch,",
+      "every expiry"
+     ],
+     "hl": [
+      "expiry"
+     ],
+     "size": 80,
+     "x": 540.0,
+     "y": 230,
+     "at": 10,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "browser",
+      "args": [
+       "assets/shots/hospital-pharmacy-1600.webp"
+      ],
+      "kw": {
+       "w": 960
+      }
+     },
+     "x": 540.0,
+     "y": 860,
+     "at": 10,
+     "anim": "rise",
+     "delay": 0.1
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "Stock by expiry"
+      ],
+      "kw": {
+       "size": 46
+      }
+     },
+     "x": 540.0,
+     "y": 1315,
+     "at": 11,
+     "anim": "pop",
+     "delay": 0.2
+    }
+   ],
+   "until": 12,
+   "kind": "screen",
+   "seed": 7
+  },
+  {
+   "place": "city",
+   "dim": 0.55,
+   "no_caps": true,
+   "els": [
+    {
+     "type": "img",
+     "make": {
+      "fn": "logo",
+      "args": [],
+      "kw": {
+       "size": 190
+      }
+     },
+     "x": 540.0,
+     "y": 420,
+     "at": 12,
+     "anim": "pop",
+     "delay": 0
+    },
+    {
+     "type": "head",
+     "lines": [
+      "Check expiry",
+      "every week."
+     ],
+     "hl": [
+      "every",
+      "week."
+     ],
+     "size": 90,
+     "x": 540.0,
+     "y": 600,
+     "at": 12,
+     "delay": 0.2,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "Try a live demo: resolveai.cc"
+      ],
+      "kw": {
+       "size": 46
+      }
+     },
+     "x": 540.0,
+     "y": 1000,
+     "at": 12,
+     "anim": "pop",
+     "delay": 0.6
+    },
+    {
+     "type": "head",
+     "lines": [
+      "Follow for more"
+     ],
+     "hl": [],
+     "size": 56,
+     "x": 540.0,
+     "y": 1120,
+     "at": 13,
+     "delay": 0.3,
+     "align": "center",
+     "color": "white"
+    }
+   ],
+   "until": "end",
+   "kind": "ending",
+   "seed": 8
+  }
+ ],
+ "cover": {
+  "kicker": "ONE SCREEN",
+  "big": [
+   "EXPIRED STOCK",
+   "FOUND IN TIME"
+  ],
+  "sub": "A typical pharmacy, one expiry screen",
+  "place": "hospital",
+  "person": [
+   "doctor",
+   "point",
+   1
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Indian Journal of Pharmacology, 2016, 48(6):725-728, survey of 300 health care professionals in Delhi (100 doctors, 100 nurses, 100 pharmacists): \"Half of the pharmacists (53%) agreed that there existed a system for removing expiry medicines from the inventory.\"",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5155478",
+   "fetched": "2026-11-25"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-25T20:30:00+05:30",
+  "instagram_caption": "Is an expired medicine sitting on your pharmacy shelf right now?\n\nA survey of 100 pharmacists in Delhi, published in the Indian Journal of Pharmacology in 2016, found only 53% agreed there was a system to remove expired medicines from stock. Without one, expiry is found by hand, often too late, and the money paid for that batch is gone.\n\nList every batch expiring in the next 90 days, flag expired stock still on the shelf, and always use the batch that expires first.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: Indian Journal of Pharmacology (2016), survey of doctors, nurses and pharmacists in Delhi.\n\nHow does your pharmacy check expiry dates today?\n\n#resolveai #hospitalmanagement #pharmacy #healthcare #erp",
+  "youtube_title": "Expired Medicines on the Shelf: Catch Them on One Screen",
+  "youtube_description": "In a typical hospital pharmacy, expiry is checked by eye and found too late. A Delhi survey in the Indian Journal of Pharmacology found only 53% of 100 pharmacists agreed there was a system to remove expired medicines. Here is how one pharmacy screen shows stock and expiry for every medicine, batch by batch.\n\nTry a live demo with sample data at https://www.resolveai.cc (no sign-up).\n\nSources:\n• Indian Journal of Pharmacology, \"Comparison of the knowledge, attitude, and practices of doctors, nurses, and pharmacists regarding the use of expired and disposal of unused medicines in Delhi\" (fetched Nov 25, 2026)\n\nResolveAI: ERP software and AI automation for established businesses. Instagram: @resolveai.software\n\n#Shorts #ResolveAI #HospitalManagement"
+ },
+ "math": [
+  {
+   "expr": "53",
+   "expect": "53",
+   "note": "share of pharmacists who agreed a system existed to remove expired medicines (Indian Journal of Pharmacology, 2016)"
+  },
+  {
+   "expr": "300 // 3",
+   "expect": "100",
+   "note": "300 professionals surveyed, 100 per group, so 100 pharmacists"
+  },
+  {
+   "expr": "2016",
+   "expect": "2016",
+   "note": "year of publication, Indian J Pharmacol 2016 Nov-Dec, 48(6)"
+  },
+  {
+   "expr": "90",
+   "expect": "90",
+   "note": "the hospital demo pharmacy flags stock expiring within 90 days"
+  }
+ ]
+}
