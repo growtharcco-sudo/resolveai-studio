@@ -9,7 +9,7 @@ Rotate industries and series. Examples are typical examples, never real clients.
 - [used 004] BEFORE / AFTER: a school office on fee day, paper receipts vs the fees screen. School.
 - [used P003] QUICK FACT: India's MSME count and their share of exports (msme.gov.in / PIB). What it means for owners.
 - [used C006] N STEPS: 3 steps to collect dues faster (reminders, ageing list, one view of who owes what). Distributor.
-- MONEY LEAK: missed follow-ups. Enquiries answered late on WhatsApp. Agency.
+- [used 012] MONEY LEAK: missed follow-ups. Enquiries answered late on WhatsApp. Agency. (HBR 2011 lead study is paywalled, only vendor blogs repeat its numbers: not used.)
 - [used 005] ONE SCREEN: OPD queue and bed status on the hospital demo. Hospital.
 - [used 003] QUICK FACT: GST e-invoicing threshold for businesses (cbic.gov.in / gst.gov.in, check the current limit). Distributor.
 - [used 010] BEFORE / AFTER: month end closing, 3 days of spreadsheets vs a live dashboard. Factory.

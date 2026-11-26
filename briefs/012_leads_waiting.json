@@ -1,0 +1,47 @@
+{
+ "id": "012_leads_waiting",
+ "series": "MONEY LEAK",
+ "speed": 1.15,
+ "beats": [
+  {"say": "Your best enquiry today might wait hours for a reply.",
+   "show": {"kind": "hook", "place": "office", "kicker": "MONEY LEAK", "lines": ["Enquiry waiting", "for hours?"], "hl": ["hours?"], "person": ["owner", "phone", 2], "badge": "LEADS GOING COLD"}},
+  {"say": "And by then, they may have called someone else.", "pause": 0.5},
+  {"say": "Picture a typical agency on a busy Monday.",
+   "show": {"kind": "story", "place": "office", "sub": "A TYPICAL AGENCY", "person": ["staff", "stress", 1], "bubble": ["New lead: Can you", "quote for our", "new website?"], "reply": ["Seen at 6 PM.", "No reply yet."]}},
+  {"say": "A new lead messages on Instagram at ten in the morning.", "cap": "A new lead messages on Instagram at 10 AM."},
+  {"say": "Someone finally sees it at six in the evening.", "cap": "Someone finally sees it at 6 PM.", "pause": 0.5},
+  {"say": "Enquiries land in different inboxes and D Ms.", "cap": "Enquiries land in different inboxes and DMs.",
+   "show": {"kind": "problem", "place": "office", "lines": ["Leads lost", "in the inbox"], "hl": ["lost"], "papers": true, "badge": "NO OWNER"}},
+  {"say": "Nobody owns the lead, so nobody replies.", "pause": 0.5},
+  {"say": "First, every enquiry lands in one lead pipeline.",
+   "show": {"kind": "steps", "title": "Plug the leak", "hl": 1, "steps": [["chart", "One lead pipeline"], ["whatsapp", "Reply in a minute"], ["user", "Owner and next step"]], "place": "office"}},
+  {"say": "Next, an automation replies on email or WhatsApp within a minute.", "cap": "Next, an automation replies on email or WhatsApp within 1 minute."},
+  {"say": "Then the lead goes to the right person, with a next step.", "pause": 0.5},
+  {"say": "Agency Hub shows every lead with its stage and owner.",
+   "show": {"kind": "screen", "shot": "hub-pipeline", "device": "browser", "title": ["Every lead,", "one pipeline"], "hl": ["one", "pipeline"], "callout": "Stages, owners, next steps"}},
+  {"say": "So no enquiry sits without an owner.", "pause": 0.5},
+  {"say": "Try a live demo at resolve A I dot C C.", "cap": "Try a live demo at resolveai.cc",
+   "show": {"kind": "ending", "lines": ["Every lead", "gets an answer."], "hl": ["answer."]}},
+  {"say": "Follow for more."}
+ ],
+ "cover": {"kicker": "MONEY LEAK", "big": ["LEADS LEFT", "WAITING?"], "sub": "Reply before they go cold", "place": "office", "person": ["owner", "phone", 2]},
+ "sources": [
+  {"fact": "ResolveAI Agency Hub page: 'New leads wait hours. Enquiries land in different inboxes and DMs and get a reply when someone remembers.'; 'Lead pipeline with stages, owners and next steps'; 'Automations for instant lead replies and client reports (optional)'; FAQ: 'We can add an automation that replies by email or WhatsApp within a minute and routes the lead to the right person.'; 'The demo opens a working copy with sample data. View only, no sign-up.' (page text read from the site's published source on this date)",
+   "url": "https://www.resolveai.cc/agency-management-software",
+   "fetched": "2026-11-26"}
+ ],
+ "math": [
+  {"expr": "1", "expect": "1", "note": "automatic reply within a minute (ResolveAI Agency Hub FAQ)"},
+  {"expr": "10", "expect": "10", "note": "typical example: lead messages at 10 AM"},
+  {"expr": "6", "expect": "6", "note": "typical example: seen at 6 PM"},
+  {"expr": "(12 - 10) + 6", "expect": "8", "note": "typical example: 10 AM to 6 PM is 8 hours of waiting ('hours for a reply')"},
+  {"expr": "1 + 1 + 1", "expect": "3", "note": "three fixes shown in the steps scene"}
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-26T20:30:00+05:30",
+  "instagram_caption": "Is your best enquiry today waiting hours for a reply?\n\nPicture a typical agency: a new lead messages on Instagram at 10 AM and someone sees it at 6 PM. Enquiries land in different inboxes and DMs, nobody owns them, and by the time you reply the lead may have called someone else. This is a typical example, not a real client.\n\nPut every enquiry in one lead pipeline, add an automatic reply on email or WhatsApp within a minute, and give every lead an owner and a next step.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: ResolveAI Agency Hub product page.\n\nHow long does a new enquiry wait for a reply in your agency?\n\n#resolveai #agencylife #digitalagency #leadgeneration #agencyowner",
+  "youtube_title": "Leads Left Waiting: The Quiet Money Leak in Agencies",
+  "youtube_description": "In a typical agency, enquiries land in different inboxes and DMs and wait hours for a reply. Agency Hub puts every lead in one pipeline with a stage, an owner and a next step, and an optional automation replies on email or WhatsApp within a minute. This is a typical example, not a real client.\n\nTry a live demo with sample data at https://www.resolveai.cc (no sign-up).\n\nSources:\n• ResolveAI, \"Agency Management Software: Leads, Clients & Deliverables\" (fetched Nov 26, 2026)\n\nResolveAI: ERP software and AI automation for established businesses. Instagram: @resolveai.software\n\n#Shorts #ResolveAI #AgencyLife"
+ }
+}
