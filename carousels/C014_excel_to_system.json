@@ -1,0 +1,32 @@
+{
+ "id": "C014_excel_to_system",
+ "series": "4 STEPS",
+ "slides": [
+  {"kind": "cover", "kicker": "SAVE THIS", "lines": ["Leave Excel", "without chaos"], "hl": ["chaos"], "place": "office", "sub": "4 steps. Swipe."},
+  {"kind": "point", "n": 1, "title": "Start with one job", "body": "Pick the job that hurts most, like stock or billing. Move that first, and add the rest once it works.", "icon": "box"},
+  {"kind": "point", "n": 2, "title": "Clean your lists first", "body": "Tidy your item list, party list and opening stock. These are what get loaded into the new system.", "icon": "excel"},
+  {"kind": "point", "n": 3, "title": "Run both for a short while", "body": "Keep the old sheet for a few weeks and check the totals match. Fix any gaps before you switch.", "icon": "check"},
+  {"kind": "point", "n": 4, "title": "Make the system the only place", "body": "Train the people who enter data, then stop using the sheet for that job. One screen, one set of numbers.", "shot": "trading-home"},
+  {"kind": "cta", "lines": ["Start with", "one job."], "hl": ["one", "job."]}
+ ],
+ "sources": [
+  {"fact": "ResolveAI home page FAQ: 'We favor narrowly scoped systems that can be tested in weeks, then expanded once they prove useful.'; 'The aim is less disruption, not a giant migration project.' (page text read from the site's published source on this date)",
+   "url": "https://www.resolveai.cc/",
+   "fetched": "2026-11-27"},
+  {"fact": "ResolveAI Manufacturing ERP FAQ: setup is 'Usually two to four weeks for a small plant, including loading your items, parties and opening stock and training your team.' (page text read from the site's published source on this date)",
+   "url": "https://www.resolveai.cc/manufacturing-erp",
+   "fetched": "2026-11-27"},
+  {"fact": "ResolveAI Trading ERP page: 'Every setup starts with a short call about how your business runs today. We load your data, train your team and stay until it works.'; 'The demo opens a working copy with sample data. View only, no sign-up.' (page text read from the site's published source on this date)",
+   "url": "https://www.resolveai.cc/distribution-erp",
+   "fetched": "2026-11-27"}
+ ],
+ "math": [
+  {"expr": "1 + 1 + 1 + 1", "expect": "4", "note": "four steps on the slides"},
+  {"expr": "2", "expect": "2", "note": "setup usually two to four weeks for a small plant (ResolveAI Manufacturing ERP FAQ)"},
+  {"expr": "4", "expect": "4", "note": "setup usually two to four weeks for a small plant (ResolveAI Manufacturing ERP FAQ)"}
+ ],
+ "post": {
+  "post_at": "2026-11-28T11:00:00+05:30",
+  "instagram_caption": "Want to leave Excel without stopping work? Save this.\n\nYou do not have to change everything on one day. Move one job at a time, load clean lists, and check the numbers before you switch. For a small plant, our setup usually takes two to four weeks, including loading items, parties and opening stock and training the team.\n\n4 steps: start with one job, clean your lists first, run both for a short while, then make the system the only place for that job.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: ResolveAI product pages and FAQ.\n\nWhich job in your business would you move out of Excel first?\n\n#resolveai #excel #erp #msme #businessowner"
+ }
+}
