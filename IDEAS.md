@@ -5,7 +5,7 @@ Rotate industries and series. Examples are typical examples, never real clients.
 
 - [used 001] 4 SIGNS: your business has outgrown Excel (#4: nobody knows who owes you money). Factory.
 - [used 008] MONEY LEAK: dead stock / unsold finished goods (RBI OBICUS finished goods to sales ratio), factory version. Items sitting unsold for months and what they cost (find a sourced inventory carrying cost range). Distributor.
-- ONE SCREEN: the reorder alert. "Items below reorder level" on the factory demo dashboard. Factory.
+- [used 013] ONE SCREEN: the reorder alert. "Below reorder level only" on the trading demo inventory. Distributor.
 - [used 004] BEFORE / AFTER: a school office on fee day, paper receipts vs the fees screen. School.
 - [used P003] QUICK FACT: India's MSME count and their share of exports (msme.gov.in / PIB). What it means for owners.
 - [used C006] N STEPS: 3 steps to collect dues faster (reminders, ageing list, one view of who owes what). Distributor.

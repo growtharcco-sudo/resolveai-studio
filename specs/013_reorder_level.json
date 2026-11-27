@@ -1,0 +1,512 @@
+{
+ "id": "013_reorder_level",
+ "series": "ONE SCREEN",
+ "voice": "am_liam",
+ "speed": 1.15,
+ "header": "ONE SCREEN",
+ "phrases": [
+  {
+   "say": "Why does your fastest item always run out first?",
+   "cap": "Why does your fastest item always run out first?",
+   "pause": 0.18
+  },
+  {
+   "say": "Often, because reordering is done from memory.",
+   "cap": "Often, because reordering is done from memory.",
+   "pause": 0.5
+  },
+  {
+   "say": "Picture a typical distributor on a Monday morning.",
+   "cap": "Picture a typical distributor on a Monday morning.",
+   "pause": 0.18
+  },
+  {
+   "say": "A shop orders twenty bags of tur dal.",
+   "cap": "A shop orders 20 bags of tur dal.",
+   "pause": 0.18
+  },
+  {
+   "say": "Only twelve are left, and the supplier takes seven days.",
+   "cap": "Only 12 are left, and the supplier takes 7 days.",
+   "pause": 0.5
+  },
+  {
+   "say": "The fix is a reorder level for every item.",
+   "cap": "The fix is a reorder level for every item.",
+   "pause": 0.18
+  },
+  {
+   "say": "Sell forty a day, wait seven days, keep one hundred spare.",
+   "cap": "Sell 40 a day, wait 7 days, keep 100 spare.",
+   "pause": 0.18
+  },
+  {
+   "say": "When stock falls to three hundred eighty, you order.",
+   "cap": "When stock falls to 380, you order.",
+   "pause": 0.5
+  },
+  {
+   "say": "In the trading demo, one tick shows every item below reorder level.",
+   "cap": "In the trading demo, one tick shows every item below reorder level.",
+   "pause": 0.18
+  },
+  {
+   "say": "Those items turn gold, before the shelf is empty.",
+   "cap": "Those items turn gold, before the shelf is empty.",
+   "pause": 0.5
+  },
+  {
+   "say": "Try a live demo at resolve A I dot C C.",
+   "cap": "Try a live demo at resolveai.cc",
+   "pause": 0.18
+  },
+  {
+   "say": "Follow for more.",
+   "cap": "Follow for more.",
+   "pause": 0.35
+  }
+ ],
+ "scenes": [
+  {
+   "place": "warehouse",
+   "dim": 0.15,
+   "els": [
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "ONE SCREEN"
+      ],
+      "kw": {
+       "size": 42
+      }
+     },
+     "x": 540.0,
+     "y": 300,
+     "at": -1,
+     "anim": "pop",
+     "delay": 0
+    },
+    {
+     "type": "head",
+     "lines": [
+      "Best seller",
+      "out of stock?"
+     ],
+     "hl": [
+      "out",
+      "of",
+      "stock?"
+     ],
+     "size": 104,
+     "x": 540.0,
+     "y": 370,
+     "at": -1,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "person",
+      "args": [
+       "owner",
+       "stress",
+       2
+      ],
+      "kw": {
+       "scale": 1.3
+      }
+     },
+     "x": 760,
+     "y": 981.0,
+     "at": -1,
+     "anim": "rise",
+     "delay": 0,
+     "float": 0
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "ORDERED FROM MEMORY"
+      ],
+      "kw": {
+       "size": 50,
+       "bg": [
+        228,
+        87,
+        46
+       ],
+       "fg": [
+        255,
+        255,
+        255
+       ]
+      }
+     },
+     "x": 330,
+     "y": 1180,
+     "at": 1,
+     "anim": "pop",
+     "delay": 0.3
+    }
+   ],
+   "until": 2,
+   "kind": "hook",
+   "seed": 3
+  },
+  {
+   "place": "warehouse",
+   "dim": 0.0,
+   "els": [
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "A TYPICAL DISTRIBUTOR"
+      ],
+      "kw": {
+       "size": 40
+      }
+     },
+     "x": 540.0,
+     "y": 300,
+     "at": 2,
+     "anim": "pop",
+     "delay": 0
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "person",
+      "args": [
+       "clerk",
+       "stress",
+       1
+      ],
+      "kw": {
+       "scale": 1.3
+      }
+     },
+     "x": 280,
+     "y": 981.0,
+     "at": 2,
+     "anim": "rise",
+     "delay": 0,
+     "float": 0
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "bubble",
+      "args": [
+       [
+        "Shop: Please send",
+        "20 bags of tur dal."
+       ]
+      ],
+      "kw": {
+       "w": 700,
+       "tail": "left"
+      }
+     },
+     "x": 640,
+     "y": 700,
+     "at": 2,
+     "anim": "pop",
+     "delay": 0.35
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "bubble",
+      "args": [
+       [
+        "Only 12 left.",
+        "Supplier takes 7 days."
+       ]
+      ],
+      "kw": {
+       "w": 640,
+       "tail": "right",
+       "bg": [
+        201,
+        162,
+        39
+       ]
+      }
+     },
+     "x": 520,
+     "y": 1020,
+     "at": 3,
+     "anim": "pop",
+     "delay": 0.2
+    }
+   ],
+   "until": 5,
+   "kind": "story",
+   "seed": 4
+  },
+  {
+   "place": "warehouse",
+   "dim": 0.62,
+   "els": [
+    {
+     "type": "head",
+     "lines": [
+      "Reorder at"
+     ],
+     "hl": [],
+     "size": 76,
+     "x": 540.0,
+     "y": 470,
+     "at": 5,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "count",
+     "to": 380,
+     "prefix": "",
+     "suffix": "",
+     "dec": 0,
+     "indian": false,
+     "size": 210,
+     "x": 540.0,
+     "y": 700,
+     "color": "gold",
+     "at": 5,
+     "delay": 0.15,
+     "dur": 1.1
+    },
+    {
+     "type": "head",
+     "lines": [
+      "40 a day x 7 days + 100 spare"
+     ],
+     "hl": [],
+     "size": 60,
+     "x": 540.0,
+     "y": 1040,
+     "at": 6,
+     "delay": 0.1,
+     "align": "center",
+     "color": "white"
+    }
+   ],
+   "until": 8,
+   "kind": "number",
+   "seed": 5
+  },
+  {
+   "place": "office",
+   "dim": 0.7,
+   "els": [
+    {
+     "type": "head",
+     "lines": [
+      "Below reorder",
+      "level, in gold"
+     ],
+     "hl": [
+      "gold"
+     ],
+     "size": 80,
+     "x": 540.0,
+     "y": 230,
+     "at": 8,
+     "delay": 0,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "browser",
+      "args": [
+       "assets/shots/trading-inventory-1600.webp"
+      ],
+      "kw": {
+       "w": 960
+      }
+     },
+     "x": 540.0,
+     "y": 860,
+     "at": 8,
+     "anim": "rise",
+     "delay": 0.1
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "One tick: what to buy today"
+      ],
+      "kw": {
+       "size": 46
+      }
+     },
+     "x": 540.0,
+     "y": 1315,
+     "at": 9,
+     "anim": "pop",
+     "delay": 0.2
+    }
+   ],
+   "until": 10,
+   "kind": "screen",
+   "seed": 6
+  },
+  {
+   "place": "city",
+   "dim": 0.55,
+   "no_caps": true,
+   "els": [
+    {
+     "type": "img",
+     "make": {
+      "fn": "logo",
+      "args": [],
+      "kw": {
+       "size": 190
+      }
+     },
+     "x": 540.0,
+     "y": 420,
+     "at": 10,
+     "anim": "pop",
+     "delay": 0
+    },
+    {
+     "type": "head",
+     "lines": [
+      "Order before",
+      "you run out."
+     ],
+     "hl": [
+      "run",
+      "out."
+     ],
+     "size": 90,
+     "x": 540.0,
+     "y": 600,
+     "at": 10,
+     "delay": 0.2,
+     "align": "center",
+     "color": "white"
+    },
+    {
+     "type": "img",
+     "make": {
+      "fn": "chip",
+      "args": [
+       "Try a live demo: resolveai.cc"
+      ],
+      "kw": {
+       "size": 46
+      }
+     },
+     "x": 540.0,
+     "y": 1000,
+     "at": 10,
+     "anim": "pop",
+     "delay": 0.6
+    },
+    {
+     "type": "head",
+     "lines": [
+      "Follow for more"
+     ],
+     "hl": [],
+     "size": 56,
+     "x": 540.0,
+     "y": 1120,
+     "at": 11,
+     "delay": 0.3,
+     "align": "center",
+     "color": "white"
+    }
+   ],
+   "until": "end",
+   "kind": "ending",
+   "seed": 7
+  }
+ ],
+ "cover": {
+  "kicker": "ONE SCREEN",
+  "big": [
+   "RUNNING OUT",
+   "AGAIN?"
+  ],
+  "sub": "Set a reorder level per item",
+  "place": "warehouse",
+  "person": [
+   "owner",
+   "stress",
+   2
+  ]
+ },
+ "sources": [
+  {
+   "fact": "ResolveAI glossary, 'What is reorder level?': 'Reorder level = (average daily sales x lead time in days) + safety stock'; example: 'You sell 40 units a day, your supplier takes 7 days, and you keep 100 units of safety stock. Reorder level = 40 x 7 + 100 = 380 units. When stock falls to 380, order.' (page text read from the site's published source on this date)",
+   "url": "https://www.resolveai.cc/glossary/reorder-level",
+   "fetched": "2026-11-27"
+  },
+  {
+   "fact": "ResolveAI Trading ERP page: 'Stock-outs and dead stock: Fast movers run out while slow movers pile up, because reordering is done from memory.'; 'Stock by item, brand and category, with reorder levels'; 'Reorder planning: what to buy, how much, from whom'; 'The demo opens a working copy with sample data. View only, no sign-up.' (page text read from the site's published source on this date)",
+   "url": "https://www.resolveai.cc/distribution-erp",
+   "fetched": "2026-11-27"
+  },
+  {
+   "fact": "Trading demo Inventory screen (trading.resolveai.cc, sample data): an 'On hand' list with a 'Below reorder level only' tick box; the app source marks on-hand quantity in the warning colour when it is below the item's reorder level (client/src/pages/Inventory.tsx, read on this date)",
+   "url": "https://trading.resolveai.cc",
+   "fetched": "2026-11-27"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-27T20:30:00+05:30",
+  "instagram_caption": "Why does your fastest item always run out first?\n\nPicture a typical distributor: a shop orders 20 bags of tur dal, only 12 are left, and the supplier takes 7 days. When reordering is done from memory, fast movers run out while slow movers pile up. This is a typical example, not a real client.\n\nSet a reorder level for every item: average daily sales x lead time in days, plus safety stock. Sell 40 a day, wait 7 days, keep 100 spare, and you order when stock falls to 380. In the trading demo, one tick shows every item below its reorder level.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: ResolveAI glossary (reorder level) and Trading ERP page.\n\nHow do you decide when to reorder your fastest selling item?\n\n#resolveai #distributor #inventorymanagement #wholesale #stockmanagement",
+  "youtube_title": "Best Seller Out of Stock? Set a Reorder Level Per Item",
+  "youtube_description": "When reordering is done from memory, fast movers run out while slow movers pile up. A reorder level per item fixes it: average daily sales x lead time in days, plus safety stock. In the trading demo, one tick shows every item below its reorder level. The distributor story is a typical example, not a real client.\n\nTry a live demo with sample data at https://www.resolveai.cc (no sign-up).\n\nSources:\n• ResolveAI, \"What Is Reorder Level? Formula and Example\" (fetched Nov 27, 2026)\n• ResolveAI, \"ERP & Billing Software for Distributors and Wholesale Traders\" (fetched Nov 27, 2026)\n\nResolveAI: ERP software and AI automation for established businesses. Instagram: @resolveai.software\n\n#Shorts #ResolveAI #Inventory"
+ },
+ "math": [
+  {
+   "expr": "40 * 7 + 100",
+   "expect": "380",
+   "note": "reorder level example from the ResolveAI glossary: 40 a day x 7 days lead time + 100 safety stock"
+  },
+  {
+   "expr": "40",
+   "expect": "40",
+   "note": "average daily sales in the glossary example"
+  },
+  {
+   "expr": "7",
+   "expect": "7",
+   "note": "supplier lead time in days (glossary example and the typical distributor story)"
+  },
+  {
+   "expr": "100",
+   "expect": "100",
+   "note": "safety stock in the glossary example"
+  },
+  {
+   "expr": "20 - 12",
+   "expect": "8",
+   "note": "typical example: shop orders 20 bags, 12 left, 8 short"
+  },
+  {
+   "expr": "12",
+   "expect": "12",
+   "note": "typical example: 12 bags of tur dal left (matches the demo's sample data)"
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "id": "013_reorder_level",
+ "series": "ONE SCREEN",
+ "speed": 1.15,
+ "beats": [
+  {"say": "Why does your fastest item always run out first?",
+   "show": {"kind": "hook", "place": "warehouse", "kicker": "ONE SCREEN", "lines": ["Best seller", "out of stock?"], "hl": ["out", "of", "stock?"], "person": ["owner", "stress", 2], "badge": "ORDERED FROM MEMORY"}},
+  {"say": "Often, because reordering is done from memory.", "pause": 0.5},
+  {"say": "Picture a typical distributor on a Monday morning.",
+   "show": {"kind": "story", "place": "warehouse", "sub": "A TYPICAL DISTRIBUTOR", "person": ["clerk", "stress", 1], "bubble": ["Shop: Please send", "20 bags of tur dal."], "reply": ["Only 12 left.", "Supplier takes 7 days."]}},
+  {"say": "A shop orders twenty bags of tur dal.", "cap": "A shop orders 20 bags of tur dal."},
+  {"say": "Only twelve are left, and the supplier takes seven days.", "cap": "Only 12 are left, and the supplier takes 7 days.", "pause": 0.5},
+  {"say": "The fix is a reorder level for every item.",
+   "show": {"kind": "number", "to": 380, "label": "Reorder at", "sub": "40 a day x 7 days + 100 spare", "color": "gold", "place": "warehouse"}},
+  {"say": "Sell forty a day, wait seven days, keep one hundred spare.", "cap": "Sell 40 a day, wait 7 days, keep 100 spare."},
+  {"say": "When stock falls to three hundred eighty, you order.", "cap": "When stock falls to 380, you order.", "pause": 0.5},
+  {"say": "In the trading demo, one tick shows every item below reorder level.",
+   "show": {"kind": "screen", "shot": "trading-inventory", "device": "browser", "title": ["Below reorder", "level, in gold"], "hl": ["gold"], "callout": "One tick: what to buy today"}},
+  {"say": "Those items turn gold, before the shelf is empty.", "pause": 0.5},
+  {"say": "Try a live demo at resolve A I dot C C.", "cap": "Try a live demo at resolveai.cc",
+   "show": {"kind": "ending", "lines": ["Order before", "you run out."], "hl": ["run", "out."]}},
+  {"say": "Follow for more."}
+ ],
+ "cover": {"kicker": "ONE SCREEN", "big": ["RUNNING OUT", "AGAIN?"], "sub": "Set a reorder level per item", "place": "warehouse", "person": ["owner", "stress", 2]},
+ "sources": [
+  {"fact": "ResolveAI glossary, 'What is reorder level?': 'Reorder level = (average daily sales x lead time in days) + safety stock'; example: 'You sell 40 units a day, your supplier takes 7 days, and you keep 100 units of safety stock. Reorder level = 40 x 7 + 100 = 380 units. When stock falls to 380, order.' (page text read from the site's published source on this date)",
+   "url": "https://www.resolveai.cc/glossary/reorder-level",
+   "fetched": "2026-11-27"},
+  {"fact": "ResolveAI Trading ERP page: 'Stock-outs and dead stock: Fast movers run out while slow movers pile up, because reordering is done from memory.'; 'Stock by item, brand and category, with reorder levels'; 'Reorder planning: what to buy, how much, from whom'; 'The demo opens a working copy with sample data. View only, no sign-up.' (page text read from the site's published source on this date)",
+   "url": "https://www.resolveai.cc/distribution-erp",
+   "fetched": "2026-11-27"},
+  {"fact": "Trading demo Inventory screen (trading.resolveai.cc, sample data): an 'On hand' list with a 'Below reorder level only' tick box; the app source marks on-hand quantity in the warning colour when it is below the item's reorder level (client/src/pages/Inventory.tsx, read on this date)",
+   "url": "https://trading.resolveai.cc",
+   "fetched": "2026-11-27"}
+ ],
+ "math": [
+  {"expr": "40 * 7 + 100", "expect": "380", "note": "reorder level example from the ResolveAI glossary: 40 a day x 7 days lead time + 100 safety stock"},
+  {"expr": "40", "expect": "40", "note": "average daily sales in the glossary example"},
+  {"expr": "7", "expect": "7", "note": "supplier lead time in days (glossary example and the typical distributor story)"},
+  {"expr": "100", "expect": "100", "note": "safety stock in the glossary example"},
+  {"expr": "20 - 12", "expect": "8", "note": "typical example: shop orders 20 bags, 12 left, 8 short"},
+  {"expr": "12", "expect": "12", "note": "typical example: 12 bags of tur dal left (matches the demo's sample data)"}
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-27T20:30:00+05:30",
+  "instagram_caption": "Why does your fastest item always run out first?\n\nPicture a typical distributor: a shop orders 20 bags of tur dal, only 12 are left, and the supplier takes 7 days. When reordering is done from memory, fast movers run out while slow movers pile up. This is a typical example, not a real client.\n\nSet a reorder level for every item: average daily sales x lead time in days, plus safety stock. Sell 40 a day, wait 7 days, keep 100 spare, and you order when stock falls to 380. In the trading demo, one tick shows every item below its reorder level.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: ResolveAI glossary (reorder level) and Trading ERP page.\n\nHow do you decide when to reorder your fastest selling item?\n\n#resolveai #distributor #inventorymanagement #wholesale #stockmanagement",
+  "youtube_title": "Best Seller Out of Stock? Set a Reorder Level Per Item",
+  "youtube_description": "When reordering is done from memory, fast movers run out while slow movers pile up. A reorder level per item fixes it: average daily sales x lead time in days, plus safety stock. In the trading demo, one tick shows every item below its reorder level. The distributor story is a typical example, not a real client.\n\nTry a live demo with sample data at https://www.resolveai.cc (no sign-up).\n\nSources:\n• ResolveAI, \"What Is Reorder Level? Formula and Example\" (fetched Nov 27, 2026)\n• ResolveAI, \"ERP & Billing Software for Distributors and Wholesale Traders\" (fetched Nov 27, 2026)\n\nResolveAI: ERP software and AI automation for established businesses. Instagram: @resolveai.software\n\n#Shorts #ResolveAI #Inventory"
+ }
+}
