@@ -15,7 +15,7 @@ Rotate industries and series. Examples are typical examples, never real clients.
 - [used 010] BEFORE / AFTER: month end closing, 3 days of spreadsheets vs a live dashboard. Factory.
 - [used 007] N SIGNS: your agency needs a project tracker (deadlines in heads, clients chasing updates). Agency.
 - [used 009] ONE SCREEN: attendance in one tap on the school demo. School.
-- MONEY LEAK: production wastage nobody records. Factory.
+- [used 015] MONEY LEAK: production wastage nobody records. Factory. (process loss, ResolveAI glossary example)
 - [used 006] QUICK FACT: how many businesses use AI (find a sourced survey, India or global). Office.
 - N STEPS: 4 steps to move from Excel to a system without stopping work. Any.
 - [used 011] ONE SCREEN: pharmacy expiry on the hospital demo (Indian J Pharmacol 2016 survey, 53% of pharmacists). Hospital.

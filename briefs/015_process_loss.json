@@ -1,0 +1,234 @@
+{
+ "id": "015_process_loss",
+ "series": "MONEY LEAK",
+ "speed": 1.15,
+ "beats": [
+  {
+   "say": "One thousand kilos in. Nine hundred fifty out. Where did fifty go?",
+   "cap": "1,000 kg in. 950 out. Where did 50 go?",
+   "show": {
+    "kind": "hook",
+    "place": "factory",
+    "kicker": "MONEY LEAK",
+    "lines": [
+     "1,000 kg in.",
+     "950 kg out."
+    ],
+    "hl": [
+     "950",
+     "kg",
+     "out."
+    ],
+    "person": [
+     "owner",
+     "stress",
+     1
+    ],
+    "badge": "PROCESS LOSS"
+   }
+  },
+  {
+   "say": "That gap is process loss. On paper, it often shows up only at year end.",
+   "pause": 0.5
+  },
+  {
+   "say": "Picture a typical batch. The loss is five percent.",
+   "cap": "Picture a typical batch. The loss is 5%.",
+   "show": {
+    "kind": "number",
+    "to": 5,
+    "suffix": "%",
+    "label": "Lost in this batch",
+    "sub": "Only 2% is normal",
+    "color": "red",
+    "place": "factory"
+   }
+  },
+  {
+   "say": "But only two percent is normal for this product.",
+   "cap": "But only 2% is normal for this product."
+  },
+  {
+   "say": "So thirty kilos are abnormal loss.",
+   "cap": "So 30 kg is abnormal loss.",
+   "pause": 0.5
+  },
+  {
+   "say": "At one hundred twenty rupees a kilo, that is three thousand six hundred rupees.",
+   "cap": "At ₹120 a kg, that is ₹3,600.",
+   "show": {
+    "kind": "number",
+    "to": 3600,
+    "prefix": "₹",
+    "indian": true,
+    "label": "Abnormal loss, 1 batch",
+    "sub": "30 kg x ₹120 a kg",
+    "color": "gold",
+    "place": "factory"
+   }
+  },
+  {
+   "say": "In one batch, hidden inside your product cost.",
+   "pause": 0.5
+  },
+  {
+   "say": "The fix: weigh what goes into every batch.",
+   "show": {
+    "kind": "steps",
+    "title": "The fix",
+    "steps": [
+     [
+      "box",
+      "Weigh what goes in"
+     ],
+     [
+      "check",
+      "Weigh output and scrap"
+     ],
+     [
+      "chart",
+      "Compare loss every day"
+     ]
+    ],
+    "hl": 2,
+    "place": "factory"
+   }
+  },
+  {
+   "say": "Weigh the good output and the scrap."
+  },
+  {
+   "say": "Compare loss by machine and shift, every day.",
+   "pause": 0.5
+  },
+  {
+   "say": "In the factory demo, every batch shows made versus planned, and the cost booked.",
+   "cap": "In the factory demo, every batch shows made vs planned, and the cost booked.",
+   "show": {
+    "kind": "screen",
+    "shot": "factory-production",
+    "device": "browser",
+    "title": [
+     "Every batch,",
+     "made vs planned"
+    ],
+    "hl": [
+     "planned"
+    ],
+    "callout": "Cost booked per batch"
+   }
+  },
+  {
+   "say": "So loss is not a year end surprise.",
+   "pause": 0.5
+  },
+  {
+   "say": "Try a live demo at resolve A I dot C C.",
+   "cap": "Try a live demo at resolveai.cc",
+   "show": {
+    "kind": "ending",
+    "lines": [
+     "Weigh it.",
+     "Every batch."
+    ],
+    "hl": [
+     "Every",
+     "batch."
+    ]
+   }
+  },
+  {
+   "say": "Follow for more."
+  }
+ ],
+ "cover": {
+  "kicker": "MONEY LEAK",
+  "big": [
+   "WHERE DID",
+   "50 KG GO?"
+  ],
+  "sub": "Weigh every batch",
+  "place": "factory",
+  "person": [
+   "owner",
+   "stress",
+   1
+  ]
+ },
+ "sources": [
+  {
+   "fact": "ResolveAI glossary, 'What is process loss?': 'Process loss is the material that goes into production but does not come out as good finished product'; formula 'Process loss % = (input − good output) ÷ input × 100'; 'Abnormal loss ... should be shown separately, not hidden inside product cost.'; example: 'The standard loss for a product is 2%. A batch uses 1,000 kg and gives 950 kg of good product, so the loss is 5%. Of that, 20 kg is normal and 30 kg is abnormal. At ₹120 per kg, the abnormal loss on this one batch is ₹3,600.'; 'Weigh what goes in and what comes out of every batch, weigh the scrap, and compare loss by product, machine and shift every day. A loss that is only added up at year end cannot be traced to its cause.' (page text read from the site's published source on this date)",
+   "url": "https://www.resolveai.cc/glossary/process-loss",
+   "fetched": "2026-11-28"
+  },
+  {
+   "fact": "ResolveAI Factory ERP page: 'production batches with yield and loss'; 'Production is written in a register, so yield, process loss and the real cost per kilo only show up at year end, if at all.'; 'Production batches (work orders) that consume material and book output at true cost'; 'The demo opens a working copy with sample data. View only, no sign-up.' (page text read from the site's published source on this date)",
+   "url": "https://www.resolveai.cc/manufacturing-erp",
+   "fetched": "2026-11-28"
+  },
+  {
+   "fact": "Factory demo Production screen (erp.resolveai.cc, sample data): production batches list with 'Made / planned' and 'Cost booked' columns (client/src/pages/Docs.tsx, read on this date; matches assets/shots/factory-production)",
+   "url": "https://erp.resolveai.cc",
+   "fetched": "2026-11-28"
+  }
+ ],
+ "math": [
+  {
+   "expr": "1000",
+   "expect": "1000",
+   "note": "batch input in kg, ResolveAI glossary example (typical example)"
+  },
+  {
+   "expr": "950",
+   "expect": "950",
+   "note": "good output in kg, ResolveAI glossary example"
+  },
+  {
+   "expr": "1000 - 950",
+   "expect": "50",
+   "note": "kg lost in the batch"
+  },
+  {
+   "expr": "(1000 - 950) / 1000 * 100",
+   "expect": "5.0",
+   "note": "process loss percent"
+  },
+  {
+   "expr": "2",
+   "expect": "2",
+   "note": "standard (normal) loss percent in the glossary example"
+  },
+  {
+   "expr": "1000 * 2 / 100",
+   "expect": "20.0",
+   "note": "normal loss in kg"
+  },
+  {
+   "expr": "50 - 1000 * 2 / 100",
+   "expect": "30.0",
+   "note": "abnormal loss in kg"
+  },
+  {
+   "expr": "120",
+   "expect": "120",
+   "note": "material cost per kg in the glossary example"
+  },
+  {
+   "expr": "30 * 120",
+   "expect": "3600",
+   "note": "abnormal loss in rupees on one batch"
+  },
+  {
+   "expr": "1",
+   "expect": "1",
+   "note": "one batch"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-28T20:30:00+05:30",
+  "instagram_caption": "1,000 kg in. 950 kg out. Where did 50 go?\n\nThat gap is process loss. Picture a typical batch where 2% loss is normal for the product: 5% is lost, so 30 kg is abnormal loss. At ₹120 a kg, that is ₹3,600 on one batch, hidden inside product cost. This is a typical example, not a real client.\n\nWeigh what goes into every batch, weigh the good output and the scrap, and compare loss by machine and shift every day. A loss added up only at year end cannot be traced to its cause.\n\nTry a live demo with sample data at resolveai.cc, no sign-up.\n\nSource: ResolveAI glossary (process loss) and Factory ERP page.\n\nDo you weigh input and output for every batch in your factory?\n\n#resolveai #manufacturing #processloss #factory #msme",
+  "youtube_title": "1,000 kg In, 950 kg Out: Where Did 50 kg Go?",
+  "youtube_description": "The gap between material in and good product out is process loss. In a typical batch with 2% normal loss, a 5% loss means 30 kg of abnormal loss, which at ₹120 a kg is ₹3,600 on one batch. Weigh input, output and scrap for every batch and compare loss every day. The batch is a typical example, not a real client.\n\nTry a live demo with sample data at https://www.resolveai.cc (no sign-up).\n\nSources:\n• ResolveAI, \"What Is Process Loss? Normal vs Abnormal Loss Explained\" (fetched Nov 28, 2026)\n• ResolveAI, \"Manufacturing ERP for Small and Mid-Size Factories in India\" (fetched Nov 28, 2026)\n\nResolveAI: ERP software and AI automation for established businesses. Instagram: @resolveai.software\n\n#Shorts #ResolveAI #Manufacturing"
+ }
+}
